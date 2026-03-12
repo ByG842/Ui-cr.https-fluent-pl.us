@@ -1,0 +1,188 @@
+-- ========================================================================
+-- 🌌 Project: GzusUI - Premium UI Library
+-- 📝 Description: A highly optimized, Sirius-styled UI Library with Fluent API
+-- 🌐 Language Support: Universal (Native Thai Support)
+-- ========================================================================
+
+local GzusUI = {
+    Version = "1.0.0",
+    Theme = {
+        Background = Color3.fromRGB(20, 20, 20),      -- สีพื้นหลังหลัก (มืดหรูหรา)
+        Secondary = Color3.fromRGB(25, 25, 25),       -- สีพื้นหลังรอง
+        Stroke = Color3.fromRGB(45, 45, 45),          -- สีเส้นขอบ (เนียนๆ แบบ Sirius)
+        Text = Color3.fromRGB(255, 255, 255),         -- สีตัวหนังสือหลัก
+        TextMuted = Color3.fromRGB(150, 150, 150),    -- สีตัวหนังสือรอง
+        Accent = Color3.fromRGB(0, 170, 255),         -- สีหลักของ UI (ฟ้า Cyan)
+        Font = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium, Enum.FontStyle.Normal) -- ฟอนต์ที่รองรับสระภาษาไทยได้ดีที่สุด
+    }
+}
+
+-- [ 🌟 Services ] --------------------------------------------------------
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local CoreGui = game:GetService("CoreGui")
+
+-- ป้องกัน Anti-Cheat สแกนเจอ UI
+local SafeParent = gethui and gethui() or CoreGui
+
+-- [ 🌟 Core Utilities ] --------------------------------------------------
+-- ฟังก์ชันสร้างแอนิเมชันให้ลื่นไหลแบบ Sirius Menu
+function GzusUI:Tween(Object, Properties, Duration, Style, Direction)
+    Duration = Duration or 0.4
+    Style = Style or Enum.EasingStyle.Quint
+    Direction = Direction or Enum.EasingDirection.Out
+    
+    local TweenInfo = TweenInfo.new(Duration, Style, Direction)
+    local Tween = TweenService:Create(Object, TweenInfo, Properties)
+    Tween:Play()
+    return Tween
+end
+
+-- [ 🌟 API: CreateWindow ] -----------------------------------------------
+function GzusUI:CreateWindow(Config)
+    local Window = {}
+    
+    -- กำหนดค่าเริ่มต้นถ้าผู้ใช้ไม่ได้ใส่มา
+    Config.Title = Config.Title or "GzusUI Library"
+    Config.SubTitle = Config.SubTitle or "by Gzus"
+    Config.Size = Config.Size or UDim2.fromOffset(600, 400)
+    
+    -- 1. สร้าง ScreenGui หลัก
+    local ScreenGui = Instance.new("ScreenGui")
+    ScreenGui.Name = "Gzus_Interface"
+    ScreenGui.Parent = SafeParent
+    ScreenGui.ResetOnSpawn = false
+    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+
+    -- 2. สร้างกรอบหน้าต่างหลัก (Main Frame)
+    local MainFrame = Instance.new("Frame")
+    MainFrame.Name = "MainFrame"
+    MainFrame.Size = Config.Size
+    MainFrame.Position = UDim2.new(0.5, -Config.Size.X.Offset/2, 0.5, -Config.Size.Y.Offset/2)
+    MainFrame.BackgroundColor3 = GzusUI.Theme.Background
+    MainFrame.BorderSizePixel = 0
+    MainFrame.Parent = ScreenGui
+    MainFrame.ClipsDescendants = true -- ตัดส่วนที่ล้นออก
+
+    -- ลบมุมให้โค้งมนแบบพรีเมียม
+    local MainCorner = Instance.new("UICorner")
+    MainCorner.CornerRadius = UDim.new(0, 8)
+    MainCorner.Parent = MainFrame
+
+    -- เส้นขอบหน้าต่าง (Stroke)
+    local MainStroke = Instance.new("UIStroke")
+    MainStroke.Color = GzusUI.Theme.Stroke
+    MainStroke.Thickness = 1
+    MainStroke.Parent = MainFrame
+    
+    -- เงาหน้าต่าง (Drop Shadow) คล้ายคลึงกับ Sirius
+    local Shadow = Instance.new("ImageLabel")
+    Shadow.Name = "DropShadow"
+    Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+    Shadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+    Shadow.Size = UDim2.new(1, 47, 1, 47) -- ให้ใหญ่กว่ากรอบหลักนิดหน่อย
+    Shadow.BackgroundTransparency = 1
+    Shadow.Image = "rbxassetid://6015897843"
+    Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+    Shadow.ImageTransparency = 0.4
+    Shadow.SliceCenter = Rect.new(49, 49, 450, 450)
+    Shadow.ZIndex = -1
+    Shadow.Parent = MainFrame
+
+    -- 3. สร้าง Topbar (ส่วนบนสำหรับจับลากจอและแสดงชื่อ)
+    local Topbar = Instance.new("Frame")
+    Topbar.Name = "Topbar"
+    Topbar.Size = UDim2.new(1, 0, 0, 45)
+    Topbar.BackgroundTransparency = 1
+    Topbar.Parent = MainFrame
+
+    -- ข้อความ Title หลัก (รองรับภาษาไทย)
+    local TitleLabel = Instance.new("TextLabel")
+    TitleLabel.Name = "Title"
+    TitleLabel.Size = UDim2.new(0, 0, 1, 0)
+    TitleLabel.Position = UDim2.new(0, 15, 0, 0)
+    TitleLabel.BackgroundTransparency = 1
+    TitleLabel.Text = Config.Title
+    TitleLabel.TextColor3 = GzusUI.Theme.Text
+    TitleLabel.FontFace = GzusUI.Theme.Font
+    TitleLabel.TextSize = 16
+    TitleLabel.TextXAlignment = Enum.TextXAlignment.Left
+    TitleLabel.AutomaticSize = Enum.AutomaticSize.X -- ให้ขยายตามความยาวข้อความอัตโนมัติ
+    TitleLabel.Parent = Topbar
+
+    -- ข้อความ SubTitle
+    local SubTitleLabel = Instance.new("TextLabel")
+    SubTitleLabel.Name = "SubTitle"
+    SubTitleLabel.Size = UDim2.new(0, 0, 1, 0)
+    SubTitleLabel.BackgroundTransparency = 1
+    SubTitleLabel.Text = "  |  " .. Config.SubTitle
+    SubTitleLabel.TextColor3 = GzusUI.Theme.TextMuted
+    SubTitleLabel.FontFace = GzusUI.Theme.Font
+    SubTitleLabel.TextSize = 14
+    SubTitleLabel.TextXAlignment = Enum.TextXAlignment.Left
+    SubTitleLabel.AutomaticSize = Enum.AutomaticSize.X
+    SubTitleLabel.Parent = Topbar
+    
+    -- จัดเรียง Title และ SubTitle ให้อยู่ติดกัน
+    local TopbarLayout = Instance.new("UIListLayout")
+    TopbarLayout.FillDirection = Enum.FillDirection.Horizontal
+    TopbarLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    TopbarLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+    TopbarLayout.Parent = Topbar
+    
+    -- เพิ่ม Padding ให้ Topbar ไม่ชิดขอบซ้ายเกินไป
+    local TopbarPadding = Instance.new("UIPadding")
+    TopbarPadding.PaddingLeft = UDim.new(0, 15)
+    TopbarPadding.Parent = Topbar
+
+    -- เส้นคั่น Topbar
+    local TopbarDivider = Instance.new("Frame")
+    TopbarDivider.Name = "Divider"
+    TopbarDivider.Size = UDim2.new(1, 0, 0, 1)
+    TopbarDivider.Position = UDim2.new(0, 0, 1, -1)
+    TopbarDivider.BackgroundColor3 = GzusUI.Theme.Stroke
+    TopbarDivider.BorderSizePixel = 0
+    TopbarDivider.Parent = Topbar
+
+    -- 4. ระบบลากจอแบบสมูท (Smooth Dragging)
+    local Dragging = false
+    local DragInput
+    local DragStart
+    local StartPosition
+
+    Topbar.InputBegan:Connect(function(Input)
+        if Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch then
+            Dragging = true
+            DragStart = Input.Position
+            StartPosition = MainFrame.Position
+
+            Input.Changed:Connect(function()
+                if Input.UserInputState == Enum.UserInputState.End then
+                    Dragging = false
+                end
+            end)
+        end
+    end)
+
+    Topbar.InputChanged:Connect(function(Input)
+        if Input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch then
+            DragInput = Input
+        end
+    end)
+
+    UserInputService.InputChanged:Connect(function(Input)
+        if Input == DragInput and Dragging then
+            local Delta = Input.Position - DragStart
+            -- ใช้ Tween เพื่อให้การลากดูสมูท ไม่กระตุก
+            GzusUI:Tween(MainFrame, {Position = UDim2.new(StartPosition.X.Scale, StartPosition.X.Offset + Delta.X, StartPosition.Y.Scale, StartPosition.Y.Offset + Delta.Y)}, 0.1)
+        end
+    end)
+    
+    -- เตรียมพื้นที่สำหรับใส่ส่วนประกอบอื่นๆ ใน Step ต่อไป
+    Window.Container = MainFrame
+    
+    return Window
+end
+
+return GzusUI
