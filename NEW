@@ -8493,7 +8493,10 @@ end
 local Elements = {}
 Elements.__index = Elements
 Elements.__namecall = function(Table, Key, ...)
-	return Elements[Key](...)
+	local fn = Elements[Key]
+	if fn then
+		return fn(Table, ...)
+	end
 end
 
 for _, ElementComponent in pairs(ElementsTable) do
@@ -9291,24 +9294,28 @@ ElementsTable.Accordion = (function()
 		}
 
 		-- Forward AddXxx calls directly via ElementsTable, bound to ContentFrame
-		setmetatable(AccProxy, {
-			__index = function(t, key)
-				-- Match "Add<Type>" keys
-				local typeName = key:match("^Add(.+)$")
-				if typeName then
-					-- Find matching element in ElementsTable
-					for _, comp in pairs(ElementsTable) do
-						if comp.__type == typeName then
-							return function(self2, idx, cfg)
-								comp.Container   = ContentFrame
-								comp.ScrollFrame = scrollFrame
-								comp.Library     = Library
-								return comp:New(idx, cfg)
-							end
+		local function AccLookup(key)
+			local typeName = key:match("^Add(.+)$")
+			if typeName then
+				for _, comp in pairs(ElementsTable) do
+					if comp.__type == typeName then
+						return function(self2, idx, cfg)
+							comp.Container   = ContentFrame
+							comp.ScrollFrame = scrollFrame
+							comp.Library     = Library
+							return comp:New(idx, cfg)
 						end
 					end
 				end
-				return rawget(t, key)
+			end
+			return rawget(AccProxy, key)
+		end
+
+		setmetatable(AccProxy, {
+			__index = AccLookup,
+			__namecall = function(t, key, ...)
+				local fn = AccLookup(key)
+				if fn then return fn(t, ...) end
 			end,
 		})
 
