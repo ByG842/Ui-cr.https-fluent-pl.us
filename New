@@ -43,13 +43,17 @@ local Themes = {
 		"Grape",
 		"Bloody",
 		"Arctic",
-		-- ธีมใหม่ที่เพิ่มเข้ามา
-		"Cyberpunk",
+		-- ✨ NEW THEMES
 		"Neon",
-		"Latte",
-		"BloodMoon",
-		"Slate",
+		"Lavender",
+		"Cyberpunk",
 		"Sakura",
+		"Toxic",
+		"Gold",
+		"Mint",
+		"Volcanic",
+		"Galaxy",
+		"Coral",
 	},
 	Dark = {
 		Name = "Dark",
@@ -756,250 +760,393 @@ local Themes = {
 		HoverChange = 0.04
 	},
 
-	-- ธีม Cyberpunk: เหลือง-ม่วงนีออน บน black
+	-- ✨ 10 NEW THEMES ✨
+
+	Neon = {
+		Name = "Neon",
+		Accent = Color3.fromRGB(0, 255, 180),
+		AcrylicMain = Color3.fromRGB(5, 5, 15),
+		AcrylicBorder = Color3.fromRGB(0, 180, 120),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(5, 5, 20), Color3.fromRGB(10, 5, 25)),
+		AcrylicNoise = 0.98,
+		TitleBarLine = Color3.fromRGB(0, 150, 100),
+		Tab = Color3.fromRGB(0, 200, 140),
+		Element = Color3.fromRGB(0, 160, 110),
+		ElementBorder = Color3.fromRGB(0, 100, 70),
+		InElementBorder = Color3.fromRGB(0, 140, 90),
+		ElementTransparency = 0.88,
+		ToggleSlider = Color3.fromRGB(0, 200, 140),
+		ToggleToggled = Color3.fromRGB(5, 20, 15),
+		SliderRail = Color3.fromRGB(0, 180, 120),
+		DropdownFrame = Color3.fromRGB(0, 220, 160),
+		DropdownHolder = Color3.fromRGB(0, 30, 20),
+		DropdownBorder = Color3.fromRGB(0, 100, 70),
+		DropdownOption = Color3.fromRGB(0, 180, 120),
+		Keybind = Color3.fromRGB(0, 180, 120),
+		Input = Color3.fromRGB(0, 160, 110),
+		InputFocused = Color3.fromRGB(0, 20, 15),
+		InputIndicator = Color3.fromRGB(0, 220, 160),
+		InputIndicatorFocus = Color3.fromRGB(0, 255, 180),
+		Dialog = Color3.fromRGB(0, 25, 18),
+		DialogHolder = Color3.fromRGB(5, 18, 13),
+		DialogHolderLine = Color3.fromRGB(0, 15, 10),
+		DialogButton = Color3.fromRGB(0, 30, 20),
+		DialogButtonBorder = Color3.fromRGB(0, 120, 80),
+		DialogBorder = Color3.fromRGB(0, 100, 70),
+		DialogInput = Color3.fromRGB(0, 35, 25),
+		DialogInputLine = Color3.fromRGB(0, 180, 120),
+		Text = Color3.fromRGB(200, 255, 230),
+		SubText = Color3.fromRGB(100, 200, 160),
+		Hover = Color3.fromRGB(0, 180, 120),
+		HoverChange = 0.04
+	},
+	Lavender = {
+		Name = "Lavender",
+		Accent = Color3.fromRGB(160, 130, 255),
+		AcrylicMain = Color3.fromRGB(25, 20, 45),
+		AcrylicBorder = Color3.fromRGB(80, 60, 130),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(30, 22, 55), Color3.fromRGB(38, 28, 65)),
+		AcrylicNoise = 0.93,
+		TitleBarLine = Color3.fromRGB(90, 70, 150),
+		Tab = Color3.fromRGB(130, 105, 200),
+		Element = Color3.fromRGB(100, 80, 170),
+		ElementBorder = Color3.fromRGB(55, 40, 100),
+		InElementBorder = Color3.fromRGB(80, 60, 140),
+		ElementTransparency = 0.86,
+		ToggleSlider = Color3.fromRGB(140, 110, 210),
+		ToggleToggled = Color3.fromRGB(30, 20, 60),
+		SliderRail = Color3.fromRGB(130, 100, 200),
+		DropdownFrame = Color3.fromRGB(150, 120, 220),
+		DropdownHolder = Color3.fromRGB(35, 28, 65),
+		DropdownBorder = Color3.fromRGB(70, 55, 120),
+		DropdownOption = Color3.fromRGB(130, 100, 200),
+		Keybind = Color3.fromRGB(130, 100, 200),
+		Input = Color3.fromRGB(110, 85, 180),
+		InputFocused = Color3.fromRGB(20, 15, 40),
+		InputIndicator = Color3.fromRGB(160, 130, 240),
+		InputIndicatorFocus = Color3.fromRGB(160, 130, 255),
+		Dialog = Color3.fromRGB(32, 25, 60),
+		DialogHolder = Color3.fromRGB(25, 20, 50),
+		DialogHolderLine = Color3.fromRGB(22, 17, 45),
+		DialogButton = Color3.fromRGB(35, 28, 65),
+		DialogButtonBorder = Color3.fromRGB(80, 60, 140),
+		DialogBorder = Color3.fromRGB(70, 55, 120),
+		DialogInput = Color3.fromRGB(40, 32, 75),
+		DialogInputLine = Color3.fromRGB(140, 110, 210),
+		Text = Color3.fromRGB(235, 225, 255),
+		SubText = Color3.fromRGB(160, 145, 210),
+		Hover = Color3.fromRGB(130, 100, 200),
+		HoverChange = 0.04
+	},
 	Cyberpunk = {
 		Name = "Cyberpunk",
 		Accent = Color3.fromRGB(255, 220, 0),
-		AcrylicMain = Color3.fromRGB(8, 8, 18),
-		AcrylicBorder = Color3.fromRGB(180, 0, 255),
-		AcrylicGradient = ColorSequence.new(Color3.fromRGB(8, 5, 20), Color3.fromRGB(12, 8, 28)),
-		AcrylicNoise = 1,
-		TitleBarLine = Color3.fromRGB(180, 0, 255),
-		Tab = Color3.fromRGB(200, 30, 255),
-		Element = Color3.fromRGB(25, 10, 45),
-		ElementBorder = Color3.fromRGB(150, 0, 220),
-		InElementBorder = Color3.fromRGB(180, 0, 255),
+		AcrylicMain = Color3.fromRGB(10, 5, 20),
+		AcrylicBorder = Color3.fromRGB(180, 0, 100),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(8, 3, 18), Color3.fromRGB(15, 5, 30)),
+		AcrylicNoise = 0.97,
+		TitleBarLine = Color3.fromRGB(180, 0, 90),
+		Tab = Color3.fromRGB(200, 0, 110),
+		Element = Color3.fromRGB(140, 0, 80),
+		ElementBorder = Color3.fromRGB(80, 0, 45),
+		InElementBorder = Color3.fromRGB(120, 0, 65),
 		ElementTransparency = 0.88,
-		ToggleSlider = Color3.fromRGB(200, 0, 255),
-		ToggleToggled = Color3.fromRGB(10, 5, 20),
-		SliderRail = Color3.fromRGB(120, 0, 180),
-		DropdownFrame = Color3.fromRGB(200, 30, 255),
-		DropdownHolder = Color3.fromRGB(12, 6, 28),
-		DropdownBorder = Color3.fromRGB(150, 0, 220),
-		DropdownOption = Color3.fromRGB(180, 20, 240),
-		Keybind = Color3.fromRGB(180, 20, 240),
-		Input = Color3.fromRGB(180, 20, 240),
-		InputFocused = Color3.fromRGB(5, 3, 12),
-		InputIndicator = Color3.fromRGB(200, 50, 255),
+		ToggleSlider = Color3.fromRGB(180, 0, 100),
+		ToggleToggled = Color3.fromRGB(20, 5, 30),
+		SliderRail = Color3.fromRGB(160, 0, 90),
+		DropdownFrame = Color3.fromRGB(200, 0, 110),
+		DropdownHolder = Color3.fromRGB(15, 5, 30),
+		DropdownBorder = Color3.fromRGB(100, 0, 55),
+		DropdownOption = Color3.fromRGB(160, 0, 90),
+		Keybind = Color3.fromRGB(160, 0, 90),
+		Input = Color3.fromRGB(130, 0, 75),
+		InputFocused = Color3.fromRGB(8, 3, 18),
+		InputIndicator = Color3.fromRGB(200, 0, 110),
 		InputIndicatorFocus = Color3.fromRGB(255, 220, 0),
-		Dialog = Color3.fromRGB(12, 6, 28),
-		DialogHolder = Color3.fromRGB(8, 4, 20),
-		DialogHolderLine = Color3.fromRGB(150, 0, 220),
-		DialogButton = Color3.fromRGB(20, 10, 40),
-		DialogButtonBorder = Color3.fromRGB(180, 0, 255),
-		DialogBorder = Color3.fromRGB(150, 0, 220),
-		DialogInput = Color3.fromRGB(20, 10, 40),
-		DialogInputLine = Color3.fromRGB(180, 0, 255),
-		Text = Color3.fromRGB(255, 220, 0),
-		SubText = Color3.fromRGB(200, 170, 255),
-		Hover = Color3.fromRGB(180, 0, 255),
-		HoverChange = 0.05,
+		Dialog = Color3.fromRGB(12, 5, 25),
+		DialogHolder = Color3.fromRGB(10, 3, 20),
+		DialogHolderLine = Color3.fromRGB(8, 2, 16),
+		DialogButton = Color3.fromRGB(15, 5, 30),
+		DialogButtonBorder = Color3.fromRGB(100, 0, 55),
+		DialogBorder = Color3.fromRGB(80, 0, 45),
+		DialogInput = Color3.fromRGB(18, 6, 35),
+		DialogInputLine = Color3.fromRGB(160, 0, 90),
+		Text = Color3.fromRGB(255, 240, 200),
+		SubText = Color3.fromRGB(200, 100, 150),
+		Hover = Color3.fromRGB(180, 0, 100),
+		HoverChange = 0.04
 	},
-
-	-- ธีม Neon: เขียวนีออนบน dark charcoal
-	Neon = {
-		Name = "Neon",
-		Accent = Color3.fromRGB(57, 255, 20),
-		AcrylicMain = Color3.fromRGB(12, 18, 12),
-		AcrylicBorder = Color3.fromRGB(0, 200, 50),
-		AcrylicGradient = ColorSequence.new(Color3.fromRGB(8, 15, 8), Color3.fromRGB(10, 20, 10)),
-		AcrylicNoise = 0.96,
-		TitleBarLine = Color3.fromRGB(0, 180, 40),
-		Tab = Color3.fromRGB(30, 220, 60),
-		Element = Color3.fromRGB(15, 40, 20),
-		ElementBorder = Color3.fromRGB(0, 160, 35),
-		InElementBorder = Color3.fromRGB(0, 200, 50),
-		ElementTransparency = 0.88,
-		ToggleSlider = Color3.fromRGB(57, 255, 20),
-		ToggleToggled = Color3.fromRGB(8, 20, 10),
-		SliderRail = Color3.fromRGB(0, 180, 40),
-		DropdownFrame = Color3.fromRGB(30, 220, 60),
-		DropdownHolder = Color3.fromRGB(10, 25, 12),
-		DropdownBorder = Color3.fromRGB(0, 160, 35),
-		DropdownOption = Color3.fromRGB(20, 200, 50),
-		Keybind = Color3.fromRGB(20, 200, 50),
-		Input = Color3.fromRGB(20, 200, 50),
-		InputFocused = Color3.fromRGB(6, 12, 7),
-		InputIndicator = Color3.fromRGB(57, 255, 20),
-		InputIndicatorFocus = Color3.fromRGB(57, 255, 20),
-		Dialog = Color3.fromRGB(10, 25, 12),
-		DialogHolder = Color3.fromRGB(8, 18, 9),
-		DialogHolderLine = Color3.fromRGB(0, 160, 35),
-		DialogButton = Color3.fromRGB(15, 35, 18),
-		DialogButtonBorder = Color3.fromRGB(0, 200, 50),
-		DialogBorder = Color3.fromRGB(0, 180, 40),
-		DialogInput = Color3.fromRGB(18, 40, 20),
-		DialogInputLine = Color3.fromRGB(0, 200, 50),
-		Text = Color3.fromRGB(57, 255, 20),
-		SubText = Color3.fromRGB(150, 220, 140),
-		Hover = Color3.fromRGB(0, 200, 50),
-		HoverChange = 0.05,
-	},
-
-	-- ธีม Latte: น้ำตาลครีมอบอุ่น สไตล์คาเฟ่
-	Latte = {
-		Name = "Latte",
-		Accent = Color3.fromRGB(160, 100, 55),
-		AcrylicMain = Color3.fromRGB(42, 28, 18),
-		AcrylicBorder = Color3.fromRGB(120, 80, 45),
-		AcrylicGradient = ColorSequence.new(Color3.fromRGB(38, 24, 14), Color3.fromRGB(44, 30, 20)),
-		AcrylicNoise = 0.92,
-		TitleBarLine = Color3.fromRGB(130, 90, 50),
-		Tab = Color3.fromRGB(160, 110, 65),
-		Element = Color3.fromRGB(80, 52, 32),
-		ElementBorder = Color3.fromRGB(55, 35, 20),
-		InElementBorder = Color3.fromRGB(100, 66, 40),
-		ElementTransparency = 0.85,
-		ToggleSlider = Color3.fromRGB(170, 115, 65),
-		ToggleToggled = Color3.fromRGB(30, 18, 10),
-		SliderRail = Color3.fromRGB(150, 100, 58),
-		DropdownFrame = Color3.fromRGB(175, 125, 70),
-		DropdownHolder = Color3.fromRGB(55, 35, 22),
-		DropdownBorder = Color3.fromRGB(80, 52, 32),
-		DropdownOption = Color3.fromRGB(150, 100, 58),
-		Keybind = Color3.fromRGB(150, 100, 58),
-		Input = Color3.fromRGB(150, 100, 58),
-		InputFocused = Color3.fromRGB(22, 14, 8),
-		InputIndicator = Color3.fromRGB(190, 140, 85),
-		InputIndicatorFocus = Color3.fromRGB(200, 150, 90),
-		Dialog = Color3.fromRGB(55, 35, 22),
-		DialogHolder = Color3.fromRGB(46, 30, 18),
-		DialogHolderLine = Color3.fromRGB(40, 26, 14),
-		DialogButton = Color3.fromRGB(65, 44, 28),
-		DialogButtonBorder = Color3.fromRGB(110, 75, 45),
-		DialogBorder = Color3.fromRGB(95, 65, 40),
-		DialogInput = Color3.fromRGB(72, 48, 30),
-		DialogInputLine = Color3.fromRGB(160, 110, 65),
-		Text = Color3.fromRGB(255, 240, 220),
-		SubText = Color3.fromRGB(200, 175, 145),
-		Hover = Color3.fromRGB(150, 100, 58),
-		HoverChange = 0.04,
-	},
-
-	-- ธีม BloodMoon: แดงเข้มดรามาติก
-	BloodMoon = {
-		Name = "BloodMoon",
-		Accent = Color3.fromRGB(220, 20, 60),
-		AcrylicMain = Color3.fromRGB(15, 5, 5),
-		AcrylicBorder = Color3.fromRGB(120, 10, 20),
-		AcrylicGradient = ColorSequence.new(Color3.fromRGB(18, 5, 5), Color3.fromRGB(22, 8, 8)),
-		AcrylicNoise = 0.95,
-		TitleBarLine = Color3.fromRGB(150, 15, 30),
-		Tab = Color3.fromRGB(180, 20, 45),
-		Element = Color3.fromRGB(55, 10, 15),
-		ElementBorder = Color3.fromRGB(100, 8, 15),
-		InElementBorder = Color3.fromRGB(130, 12, 22),
-		ElementTransparency = 0.88,
-		ToggleSlider = Color3.fromRGB(200, 25, 50),
-		ToggleToggled = Color3.fromRGB(10, 3, 3),
-		SliderRail = Color3.fromRGB(160, 18, 35),
-		DropdownFrame = Color3.fromRGB(190, 22, 45),
-		DropdownHolder = Color3.fromRGB(28, 8, 10),
-		DropdownBorder = Color3.fromRGB(110, 10, 20),
-		DropdownOption = Color3.fromRGB(170, 20, 40),
-		Keybind = Color3.fromRGB(170, 20, 40),
-		Input = Color3.fromRGB(170, 20, 40),
-		InputFocused = Color3.fromRGB(8, 2, 2),
-		InputIndicator = Color3.fromRGB(220, 30, 60),
-		InputIndicatorFocus = Color3.fromRGB(220, 20, 60),
-		Dialog = Color3.fromRGB(28, 8, 10),
-		DialogHolder = Color3.fromRGB(20, 6, 8),
-		DialogHolderLine = Color3.fromRGB(100, 8, 15),
-		DialogButton = Color3.fromRGB(40, 12, 15),
-		DialogButtonBorder = Color3.fromRGB(140, 15, 28),
-		DialogBorder = Color3.fromRGB(120, 12, 22),
-		DialogInput = Color3.fromRGB(45, 14, 18),
-		DialogInputLine = Color3.fromRGB(190, 22, 45),
-		Text = Color3.fromRGB(255, 240, 240),
-		SubText = Color3.fromRGB(200, 160, 160),
-		Hover = Color3.fromRGB(170, 20, 40),
-		HoverChange = 0.05,
-	},
-
-	-- ธีม Slate: เทาเย็น minimal
-	Slate = {
-		Name = "Slate",
-		Accent = Color3.fromRGB(100, 160, 200),
-		AcrylicMain = Color3.fromRGB(28, 32, 38),
-		AcrylicBorder = Color3.fromRGB(55, 65, 78),
-		AcrylicGradient = ColorSequence.new(Color3.fromRGB(24, 28, 34), Color3.fromRGB(28, 33, 40)),
-		AcrylicNoise = 0.93,
-		TitleBarLine = Color3.fromRGB(65, 75, 90),
-		Tab = Color3.fromRGB(90, 110, 135),
-		Element = Color3.fromRGB(48, 56, 68),
-		ElementBorder = Color3.fromRGB(35, 42, 52),
-		InElementBorder = Color3.fromRGB(60, 70, 85),
-		ElementTransparency = 0.85,
-		ToggleSlider = Color3.fromRGB(100, 125, 155),
-		ToggleToggled = Color3.fromRGB(20, 24, 30),
-		SliderRail = Color3.fromRGB(85, 105, 130),
-		DropdownFrame = Color3.fromRGB(105, 130, 160),
-		DropdownHolder = Color3.fromRGB(32, 38, 46),
-		DropdownBorder = Color3.fromRGB(48, 58, 70),
-		DropdownOption = Color3.fromRGB(90, 110, 135),
-		Keybind = Color3.fromRGB(90, 110, 135),
-		Input = Color3.fromRGB(90, 110, 135),
-		InputFocused = Color3.fromRGB(18, 22, 28),
-		InputIndicator = Color3.fromRGB(120, 148, 180),
-		InputIndicatorFocus = Color3.fromRGB(100, 160, 200),
-		Dialog = Color3.fromRGB(32, 38, 46),
-		DialogHolder = Color3.fromRGB(26, 32, 40),
-		DialogHolderLine = Color3.fromRGB(48, 58, 70),
-		DialogButton = Color3.fromRGB(40, 48, 58),
-		DialogButtonBorder = Color3.fromRGB(70, 85, 103),
-		DialogBorder = Color3.fromRGB(60, 72, 88),
-		DialogInput = Color3.fromRGB(44, 52, 64),
-		DialogInputLine = Color3.fromRGB(100, 125, 155),
-		Text = Color3.fromRGB(225, 232, 240),
-		SubText = Color3.fromRGB(158, 172, 190),
-		Hover = Color3.fromRGB(90, 110, 135),
-		HoverChange = 0.06,
-	},
-
-	-- ธีม Sakura: ชมพูอ่อน ญี่ปุ่น
 	Sakura = {
 		Name = "Sakura",
-		Accent = Color3.fromRGB(255, 105, 150),
-		AcrylicMain = Color3.fromRGB(45, 20, 30),
-		AcrylicBorder = Color3.fromRGB(200, 80, 120),
-		AcrylicGradient = ColorSequence.new(Color3.fromRGB(50, 22, 34), Color3.fromRGB(55, 25, 38)),
-		AcrylicNoise = 0.92,
-		TitleBarLine = Color3.fromRGB(210, 90, 130),
-		Tab = Color3.fromRGB(230, 110, 155),
-		Element = Color3.fromRGB(120, 55, 80),
-		ElementBorder = Color3.fromRGB(85, 38, 55),
-		InElementBorder = Color3.fromRGB(155, 70, 100),
+		Accent = Color3.fromRGB(255, 100, 150),
+		AcrylicMain = Color3.fromRGB(45, 25, 35),
+		AcrylicBorder = Color3.fromRGB(200, 100, 140),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(60, 30, 45), Color3.fromRGB(70, 35, 52)),
+		AcrylicNoise = 0.91,
+		TitleBarLine = Color3.fromRGB(210, 120, 155),
+		Tab = Color3.fromRGB(220, 130, 165),
+		Element = Color3.fromRGB(190, 100, 135),
+		ElementBorder = Color3.fromRGB(110, 55, 80),
+		InElementBorder = Color3.fromRGB(155, 80, 110),
+		ElementTransparency = 0.85,
+		ToggleSlider = Color3.fromRGB(220, 130, 165),
+		ToggleToggled = Color3.fromRGB(50, 25, 35),
+		SliderRail = Color3.fromRGB(200, 110, 150),
+		DropdownFrame = Color3.fromRGB(230, 145, 180),
+		DropdownHolder = Color3.fromRGB(65, 35, 50),
+		DropdownBorder = Color3.fromRGB(130, 70, 100),
+		DropdownOption = Color3.fromRGB(200, 110, 150),
+		Keybind = Color3.fromRGB(200, 110, 150),
+		Input = Color3.fromRGB(180, 95, 130),
+		InputFocused = Color3.fromRGB(30, 15, 22),
+		InputIndicator = Color3.fromRGB(240, 155, 190),
+		InputIndicatorFocus = Color3.fromRGB(255, 100, 150),
+		Dialog = Color3.fromRGB(60, 32, 45),
+		DialogHolder = Color3.fromRGB(50, 26, 37),
+		DialogHolderLine = Color3.fromRGB(44, 22, 33),
+		DialogButton = Color3.fromRGB(65, 35, 50),
+		DialogButtonBorder = Color3.fromRGB(145, 75, 105),
+		DialogBorder = Color3.fromRGB(120, 65, 92),
+		DialogInput = Color3.fromRGB(75, 40, 57),
+		DialogInputLine = Color3.fromRGB(210, 120, 155),
+		Text = Color3.fromRGB(255, 240, 245),
+		SubText = Color3.fromRGB(220, 175, 195),
+		Hover = Color3.fromRGB(200, 110, 150),
+		HoverChange = 0.04
+	},
+	Toxic = {
+		Name = "Toxic",
+		Accent = Color3.fromRGB(150, 255, 0),
+		AcrylicMain = Color3.fromRGB(8, 18, 5),
+		AcrylicBorder = Color3.fromRGB(80, 150, 0),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(6, 15, 4), Color3.fromRGB(10, 22, 6)),
+		AcrylicNoise = 0.96,
+		TitleBarLine = Color3.fromRGB(100, 180, 0),
+		Tab = Color3.fromRGB(110, 200, 0),
+		Element = Color3.fromRGB(90, 160, 0),
+		ElementBorder = Color3.fromRGB(50, 90, 0),
+		InElementBorder = Color3.fromRGB(75, 130, 0),
+		ElementTransparency = 0.87,
+		ToggleSlider = Color3.fromRGB(120, 210, 0),
+		ToggleToggled = Color3.fromRGB(8, 18, 5),
+		SliderRail = Color3.fromRGB(100, 180, 0),
+		DropdownFrame = Color3.fromRGB(130, 220, 0),
+		DropdownHolder = Color3.fromRGB(12, 25, 7),
+		DropdownBorder = Color3.fromRGB(70, 120, 0),
+		DropdownOption = Color3.fromRGB(100, 180, 0),
+		Keybind = Color3.fromRGB(100, 180, 0),
+		Input = Color3.fromRGB(85, 150, 0),
+		InputFocused = Color3.fromRGB(5, 12, 3),
+		InputIndicator = Color3.fromRGB(140, 230, 0),
+		InputIndicatorFocus = Color3.fromRGB(150, 255, 0),
+		Dialog = Color3.fromRGB(10, 20, 6),
+		DialogHolder = Color3.fromRGB(8, 16, 5),
+		DialogHolderLine = Color3.fromRGB(6, 12, 4),
+		DialogButton = Color3.fromRGB(12, 24, 7),
+		DialogButtonBorder = Color3.fromRGB(80, 140, 0),
+		DialogBorder = Color3.fromRGB(65, 115, 0),
+		DialogInput = Color3.fromRGB(14, 28, 8),
+		DialogInputLine = Color3.fromRGB(110, 200, 0),
+		Text = Color3.fromRGB(220, 255, 200),
+		SubText = Color3.fromRGB(130, 200, 80),
+		Hover = Color3.fromRGB(110, 200, 0),
+		HoverChange = 0.04
+	},
+	Gold = {
+		Name = "Gold",
+		Accent = Color3.fromRGB(255, 195, 0),
+		AcrylicMain = Color3.fromRGB(20, 16, 5),
+		AcrylicBorder = Color3.fromRGB(120, 90, 0),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(25, 19, 5), Color3.fromRGB(30, 23, 7)),
+		AcrylicNoise = 0.93,
+		TitleBarLine = Color3.fromRGB(150, 115, 10),
+		Tab = Color3.fromRGB(180, 140, 15),
+		Element = Color3.fromRGB(145, 110, 10),
+		ElementBorder = Color3.fromRGB(80, 62, 5),
+		InElementBorder = Color3.fromRGB(120, 92, 8),
 		ElementTransparency = 0.86,
-		ToggleSlider = Color3.fromRGB(240, 120, 165),
-		ToggleToggled = Color3.fromRGB(28, 12, 18),
-		SliderRail = Color3.fromRGB(210, 95, 140),
-		DropdownFrame = Color3.fromRGB(245, 130, 170),
-		DropdownHolder = Color3.fromRGB(60, 28, 42),
-		DropdownBorder = Color3.fromRGB(165, 70, 105),
-		DropdownOption = Color3.fromRGB(220, 105, 148),
-		Keybind = Color3.fromRGB(220, 105, 148),
-		Input = Color3.fromRGB(220, 105, 148),
-		InputFocused = Color3.fromRGB(22, 10, 15),
-		InputIndicator = Color3.fromRGB(255, 140, 180),
-		InputIndicatorFocus = Color3.fromRGB(255, 105, 150),
-		Dialog = Color3.fromRGB(60, 28, 42),
-		DialogHolder = Color3.fromRGB(50, 22, 34),
-		DialogHolderLine = Color3.fromRGB(165, 70, 105),
-		DialogButton = Color3.fromRGB(75, 35, 52),
-		DialogButtonBorder = Color3.fromRGB(195, 88, 130),
-		DialogBorder = Color3.fromRGB(175, 78, 116),
-		DialogInput = Color3.fromRGB(90, 42, 62),
-		DialogInputLine = Color3.fromRGB(230, 110, 155),
-		Text = Color3.fromRGB(255, 240, 248),
-		SubText = Color3.fromRGB(230, 185, 205),
-		Hover = Color3.fromRGB(220, 105, 148),
-		HoverChange = 0.04,
+		ToggleSlider = Color3.fromRGB(190, 148, 15),
+		ToggleToggled = Color3.fromRGB(25, 19, 5),
+		SliderRail = Color3.fromRGB(170, 132, 12),
+		DropdownFrame = Color3.fromRGB(200, 158, 20),
+		DropdownHolder = Color3.fromRGB(28, 21, 6),
+		DropdownBorder = Color3.fromRGB(100, 77, 7),
+		DropdownOption = Color3.fromRGB(170, 132, 12),
+		Keybind = Color3.fromRGB(170, 132, 12),
+		Input = Color3.fromRGB(145, 110, 10),
+		InputFocused = Color3.fromRGB(15, 11, 3),
+		InputIndicator = Color3.fromRGB(220, 172, 22),
+		InputIndicatorFocus = Color3.fromRGB(255, 195, 0),
+		Dialog = Color3.fromRGB(24, 18, 6),
+		DialogHolder = Color3.fromRGB(20, 15, 5),
+		DialogHolderLine = Color3.fromRGB(17, 13, 4),
+		DialogButton = Color3.fromRGB(28, 21, 7),
+		DialogButtonBorder = Color3.fromRGB(120, 92, 8),
+		DialogBorder = Color3.fromRGB(100, 77, 7),
+		DialogInput = Color3.fromRGB(32, 24, 8),
+		DialogInputLine = Color3.fromRGB(175, 135, 15),
+		Text = Color3.fromRGB(255, 248, 220),
+		SubText = Color3.fromRGB(210, 175, 90),
+		Hover = Color3.fromRGB(170, 132, 12),
+		HoverChange = 0.04
+	},
+	Mint = {
+		Name = "Mint",
+		Accent = Color3.fromRGB(62, 210, 170),
+		AcrylicMain = Color3.fromRGB(220, 250, 240),
+		AcrylicBorder = Color3.fromRGB(140, 230, 200),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(240, 255, 248), Color3.fromRGB(225, 248, 238)),
+		AcrylicNoise = 0.94,
+		TitleBarLine = Color3.fromRGB(160, 225, 200),
+		Tab = Color3.fromRGB(80, 195, 155),
+		Element = Color3.fromRGB(120, 215, 185),
+		ElementBorder = Color3.fromRGB(100, 190, 160),
+		InElementBorder = Color3.fromRGB(115, 205, 175),
+		ElementTransparency = 0.75,
+		ToggleSlider = Color3.fromRGB(62, 185, 148),
+		ToggleToggled = Color3.fromRGB(200, 240, 225),
+		SliderRail = Color3.fromRGB(140, 220, 190),
+		DropdownFrame = Color3.fromRGB(160, 235, 210),
+		DropdownHolder = Color3.fromRGB(235, 252, 245),
+		DropdownBorder = Color3.fromRGB(120, 210, 180),
+		DropdownOption = Color3.fromRGB(100, 200, 165),
+		Keybind = Color3.fromRGB(100, 200, 165),
+		Input = Color3.fromRGB(140, 220, 192),
+		InputFocused = Color3.fromRGB(85, 175, 145),
+		InputIndicator = Color3.fromRGB(80, 195, 155),
+		InputIndicatorFocus = Color3.fromRGB(62, 210, 170),
+		Dialog = Color3.fromRGB(235, 252, 245),
+		DialogHolder = Color3.fromRGB(242, 255, 250),
+		DialogHolderLine = Color3.fromRGB(230, 248, 240),
+		DialogButton = Color3.fromRGB(240, 255, 248),
+		DialogButtonBorder = Color3.fromRGB(150, 225, 195),
+		DialogBorder = Color3.fromRGB(130, 215, 182),
+		DialogInput = Color3.fromRGB(225, 248, 238),
+		DialogInputLine = Color3.fromRGB(140, 220, 190),
+		Text = Color3.fromRGB(20, 50, 40),
+		SubText = Color3.fromRGB(50, 120, 95),
+		Hover = Color3.fromRGB(140, 220, 192),
+		HoverChange = 0.05
+	},
+	Volcanic = {
+		Name = "Volcanic",
+		Accent = Color3.fromRGB(255, 80, 0),
+		AcrylicMain = Color3.fromRGB(15, 8, 5),
+		AcrylicBorder = Color3.fromRGB(120, 40, 0),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(20, 10, 5), Color3.fromRGB(28, 14, 7)),
+		AcrylicNoise = 0.96,
+		TitleBarLine = Color3.fromRGB(140, 55, 5),
+		Tab = Color3.fromRGB(165, 65, 8),
+		Element = Color3.fromRGB(130, 50, 5),
+		ElementBorder = Color3.fromRGB(70, 28, 3),
+		InElementBorder = Color3.fromRGB(105, 42, 4),
+		ElementTransparency = 0.87,
+		ToggleSlider = Color3.fromRGB(170, 70, 10),
+		ToggleToggled = Color3.fromRGB(20, 10, 5),
+		SliderRail = Color3.fromRGB(150, 60, 8),
+		DropdownFrame = Color3.fromRGB(185, 80, 12),
+		DropdownHolder = Color3.fromRGB(22, 11, 6),
+		DropdownBorder = Color3.fromRGB(90, 36, 4),
+		DropdownOption = Color3.fromRGB(150, 60, 8),
+		Keybind = Color3.fromRGB(150, 60, 8),
+		Input = Color3.fromRGB(125, 50, 5),
+		InputFocused = Color3.fromRGB(10, 5, 3),
+		InputIndicator = Color3.fromRGB(200, 90, 15),
+		InputIndicatorFocus = Color3.fromRGB(255, 80, 0),
+		Dialog = Color3.fromRGB(20, 10, 6),
+		DialogHolder = Color3.fromRGB(16, 8, 4),
+		DialogHolderLine = Color3.fromRGB(13, 6, 3),
+		DialogButton = Color3.fromRGB(22, 11, 6),
+		DialogButtonBorder = Color3.fromRGB(100, 40, 5),
+		DialogBorder = Color3.fromRGB(85, 34, 4),
+		DialogInput = Color3.fromRGB(26, 13, 7),
+		DialogInputLine = Color3.fromRGB(160, 65, 10),
+		Text = Color3.fromRGB(255, 235, 220),
+		SubText = Color3.fromRGB(210, 140, 100),
+		Hover = Color3.fromRGB(160, 65, 10),
+		HoverChange = 0.04
+	},
+	Galaxy = {
+		Name = "Galaxy",
+		Accent = Color3.fromRGB(130, 80, 255),
+		AcrylicMain = Color3.fromRGB(5, 3, 15),
+		AcrylicBorder = Color3.fromRGB(60, 30, 130),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(8, 4, 22), Color3.fromRGB(12, 6, 30)),
+		AcrylicNoise = 0.97,
+		TitleBarLine = Color3.fromRGB(70, 35, 155),
+		Tab = Color3.fromRGB(90, 50, 180),
+		Element = Color3.fromRGB(70, 38, 150),
+		ElementBorder = Color3.fromRGB(38, 20, 82),
+		InElementBorder = Color3.fromRGB(58, 30, 125),
+		ElementTransparency = 0.88,
+		ToggleSlider = Color3.fromRGB(100, 58, 195),
+		ToggleToggled = Color3.fromRGB(8, 4, 22),
+		SliderRail = Color3.fromRGB(85, 48, 170),
+		DropdownFrame = Color3.fromRGB(110, 65, 210),
+		DropdownHolder = Color3.fromRGB(10, 5, 28),
+		DropdownBorder = Color3.fromRGB(50, 26, 110),
+		DropdownOption = Color3.fromRGB(85, 48, 170),
+		Keybind = Color3.fromRGB(85, 48, 170),
+		Input = Color3.fromRGB(72, 40, 145),
+		InputFocused = Color3.fromRGB(5, 3, 15),
+		InputIndicator = Color3.fromRGB(120, 72, 225),
+		InputIndicatorFocus = Color3.fromRGB(130, 80, 255),
+		Dialog = Color3.fromRGB(8, 4, 22),
+		DialogHolder = Color3.fromRGB(6, 3, 18),
+		DialogHolderLine = Color3.fromRGB(5, 2, 14),
+		DialogButton = Color3.fromRGB(10, 5, 28),
+		DialogButtonBorder = Color3.fromRGB(65, 34, 140),
+		DialogBorder = Color3.fromRGB(55, 28, 118),
+		DialogInput = Color3.fromRGB(12, 6, 33),
+		DialogInputLine = Color3.fromRGB(95, 55, 185),
+		Text = Color3.fromRGB(225, 210, 255),
+		SubText = Color3.fromRGB(150, 120, 220),
+		Hover = Color3.fromRGB(90, 50, 180),
+		HoverChange = 0.04
+	},
+	Coral = {
+		Name = "Coral",
+		Accent = Color3.fromRGB(255, 100, 80),
+		AcrylicMain = Color3.fromRGB(45, 18, 15),
+		AcrylicBorder = Color3.fromRGB(200, 80, 65),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(55, 20, 17), Color3.fromRGB(65, 24, 20)),
+		AcrylicNoise = 0.91,
+		TitleBarLine = Color3.fromRGB(210, 95, 78),
+		Tab = Color3.fromRGB(220, 100, 85),
+		Element = Color3.fromRGB(185, 80, 65),
+		ElementBorder = Color3.fromRGB(100, 42, 35),
+		InElementBorder = Color3.fromRGB(150, 65, 52),
+		ElementTransparency = 0.85,
+		ToggleSlider = Color3.fromRGB(225, 108, 90),
+		ToggleToggled = Color3.fromRGB(48, 18, 15),
+		SliderRail = Color3.fromRGB(205, 92, 75),
+		DropdownFrame = Color3.fromRGB(235, 115, 96),
+		DropdownHolder = Color3.fromRGB(60, 24, 20),
+		DropdownBorder = Color3.fromRGB(120, 50, 42),
+		DropdownOption = Color3.fromRGB(200, 88, 72),
+		Keybind = Color3.fromRGB(200, 88, 72),
+		Input = Color3.fromRGB(178, 76, 62),
+		InputFocused = Color3.fromRGB(28, 11, 9),
+		InputIndicator = Color3.fromRGB(245, 122, 102),
+		InputIndicatorFocus = Color3.fromRGB(255, 100, 80),
+		Dialog = Color3.fromRGB(58, 22, 18),
+		DialogHolder = Color3.fromRGB(48, 18, 15),
+		DialogHolderLine = Color3.fromRGB(42, 16, 13),
+		DialogButton = Color3.fromRGB(62, 24, 20),
+		DialogButtonBorder = Color3.fromRGB(140, 58, 48),
+		DialogBorder = Color3.fromRGB(118, 50, 40),
+		DialogInput = Color3.fromRGB(70, 28, 23),
+		DialogInputLine = Color3.fromRGB(210, 96, 78),
+		Text = Color3.fromRGB(255, 240, 238),
+		SubText = Color3.fromRGB(225, 175, 168),
+		Hover = Color3.fromRGB(200, 88, 72),
+		HoverChange = 0.04
 	},
 
 }
 
 local Library = {
-	Version = "1.3.0-BATA",
+	Version = "2.0.0",
 
 	OpenFrames = {},
 	Options = {},
@@ -2558,7 +2705,7 @@ Components.Element = (function()
 			},
 		}, {
 			New("UICorner", {
-				CornerRadius = UDim.new(0, 4),
+				CornerRadius = UDim.new(0, 6),
 			}),
 			Element.Border,
 			Element.LabelHolder,
@@ -3797,76 +3944,67 @@ Components.Notification = (function()
 
 		NewNotification.AcrylicPaint = Acrylic.AcrylicPaint()
 
-		-- Accent bar ทางซ้าย (Fluent-style indicator)
-		NewNotification.AccentBar = New("Frame", {
-			Position = UDim2.fromOffset(0, 12),
-			Size = UDim2.new(0, 3, 1, -24),
-			BackgroundColor3 = Color3.fromRGB(96, 205, 255),
-			BorderSizePixel = 0,
-			ThemeTag = { BackgroundColor3 = "Accent" },
-		}, {
-			New("UICorner", { CornerRadius = UDim.new(1, 0) }),
-		})
-
-		-- Title: SemiBold + ขยับขวาเพื่อให้ที่ accent bar
 		NewNotification.Title = New("TextLabel", {
-			Position = UDim2.new(0, 20, 0, 14),
+			Position = UDim2.new(0, 14, 0, 17),
 			Text = Config.Title,
 			RichText = true,
+			TextColor3 = Color3.fromRGB(255, 255, 255),
 			TextTransparency = 0,
-			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.SemiBold),
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
 			TextSize = 13,
-			TextXAlignment = Enum.TextXAlignment.Left,
-			TextYAlignment = Enum.TextYAlignment.Center,
-			Size = UDim2.new(1, -52, 0, 14),
+			TextXAlignment = "Left",
+			TextYAlignment = "Center",
+			Size = UDim2.new(1, -12, 0, 12),
 			TextWrapped = true,
 			BackgroundTransparency = 1,
-			ThemeTag = { TextColor3 = "Text" },
-		})
-
-		-- Divider line ใต้ title
-		NewNotification.Divider = New("Frame", {
-			Position = UDim2.new(0, 20, 0, 32),
-			Size = UDim2.new(1, -30, 0, 1),
-			BackgroundTransparency = 0.8,
-			BorderSizePixel = 0,
-			ThemeTag = { BackgroundColor3 = "TitleBarLine" },
+			ThemeTag = {
+				TextColor3 = "Text",
+			},
 		})
 
 		NewNotification.ContentLabel = New("TextLabel", {
 			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
 			Text = Config.Content,
-			TextSize = 13,
+			TextColor3 = Color3.fromRGB(240, 240, 240),
+			TextSize = 14,
 			TextXAlignment = Enum.TextXAlignment.Left,
 			AutomaticSize = Enum.AutomaticSize.Y,
-			Size = UDim2.new(1, 0, 0, 13),
+			Size = UDim2.new(1, 0, 0, 14),
+			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 			BackgroundTransparency = 1,
 			TextWrapped = true,
-			ThemeTag = { TextColor3 = "Text" },
+			ThemeTag = {
+				TextColor3 = "Text",
+			},
 		})
 
 		NewNotification.SubContentLabel = New("TextLabel", {
 			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
 			Text = Config.SubContent,
-			TextSize = 12,
+			TextColor3 = Color3.fromRGB(240, 240, 240),
+			TextSize = 14,
 			TextXAlignment = Enum.TextXAlignment.Left,
 			AutomaticSize = Enum.AutomaticSize.Y,
-			Size = UDim2.new(1, 0, 0, 12),
+			Size = UDim2.new(1, 0, 0, 14),
+			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 			BackgroundTransparency = 1,
 			TextWrapped = true,
-			ThemeTag = { TextColor3 = "SubText" },
+			ThemeTag = {
+				TextColor3 = "SubText",
+			},
 		})
 
 		NewNotification.LabelHolder = New("Frame", {
 			AutomaticSize = Enum.AutomaticSize.Y,
+			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 			BackgroundTransparency = 1,
-			Position = UDim2.fromOffset(20, 38),
-			Size = UDim2.new(1, -30, 0, 0),
+			Position = UDim2.fromOffset(14, 40),
+			Size = UDim2.new(1, -28, 0, 0),
 		}, {
 			New("UIListLayout", {
 				SortOrder = Enum.SortOrder.LayoutOrder,
 				VerticalAlignment = Enum.VerticalAlignment.Center,
-				Padding = UDim.new(0, 4),
+				Padding = UDim.new(0, 3),
 			}),
 			NewNotification.ContentLabel,
 			NewNotification.SubContentLabel,
@@ -3874,19 +4012,20 @@ Components.Notification = (function()
 
 		NewNotification.CloseButton = New("TextButton", {
 			Text = "",
-			Position = UDim2.new(1, -12, 0, 10),
+			Position = UDim2.new(1, -14, 0, 13),
 			Size = UDim2.fromOffset(20, 20),
 			AnchorPoint = Vector2.new(1, 0),
 			BackgroundTransparency = 1,
 		}, {
 			New("ImageLabel", {
 				Image = Components.Close,
-				Size = UDim2.fromOffset(14, 14),
+				Size = UDim2.fromOffset(16, 16),
 				Position = UDim2.fromScale(0.5, 0.5),
 				AnchorPoint = Vector2.new(0.5, 0.5),
 				BackgroundTransparency = 1,
-				ImageTransparency = 0.3,
-				ThemeTag = { ImageColor3 = "SubText" },
+				ThemeTag = {
+					ImageColor3 = "Text",
+				},
 			}),
 		})
 
@@ -3896,9 +4035,7 @@ Components.Notification = (function()
 			Position = UDim2.fromScale(1, 0),
 		}, {
 			NewNotification.AcrylicPaint.Frame,
-			NewNotification.AccentBar,
 			NewNotification.Title,
-			NewNotification.Divider,
 			NewNotification.CloseButton,
 			NewNotification.LabelHolder,
 		})
@@ -4202,7 +4339,7 @@ Components.TitleBar = (function()
 		end
 
 		TitleBar.Frame = New("Frame", {
-			Size = UDim2.new(1, 0, 0, 42),
+			Size = UDim2.new(1, 0, 0, 46),
 			BackgroundTransparency = 1,
 			Parent = Config.Parent,
 		}, {
@@ -4341,7 +4478,7 @@ Components.Window = (function()
 		Window.TabWidth = Config.TabWidth
 
 		local Selector = New("Frame", {
-			Size = UDim2.fromOffset(4, 0),
+			Size = UDim2.fromOffset(3, 0),
 			BackgroundColor3 = Color3.fromRGB(76, 194, 255),
 			Position = UDim2.fromOffset(0, (Window.TabHolderTop or 45) + 0),
 			AnchorPoint = Vector2.new(0, 0.5),
@@ -6472,31 +6609,16 @@ ElementsTable.Paragraph = (function()
 	function Paragraph:New(Config)
 		Config.Content = Config.Content or ""
 
-		local Para = Components.Element(Config.Title, Config.Content, Paragraph.Container, false, Config)
-		-- Subtler background, sharper border
-		Para.Frame.BackgroundTransparency = 0.94
-		Para.Border.Transparency = 0.55
-		Para.Border.Thickness = 1
+		local Paragraph = Components.Element(Config.Title, Config.Content, Paragraph.Container, false, Config)
+		Paragraph.Frame.BackgroundTransparency = 0.92
+		Paragraph.Border.Transparency = 0.6
 
-		-- เพิ่ม accent indicator bar ทางซ้าย
-		local AccentBar = Creator.New("Frame", {
-			Size = UDim2.new(0, 2, 0.55, 0),
-			Position = UDim2.new(0, 0, 0.5, 0),
-			AnchorPoint = Vector2.new(0, 0.5),
-			BackgroundTransparency = 0.3,
-			BorderSizePixel = 0,
-			Parent = Para.Frame,
-			ThemeTag = { BackgroundColor3 = "Accent" },
-		}, {
-			Creator.New("UICorner", { CornerRadius = UDim.new(1, 0) }),
-		})
+		Paragraph.SetTitle = Paragraph.SetTitle
+		Paragraph.SetDesc = Paragraph.SetDesc
+		Paragraph.Visible = Paragraph.Visible
+		Paragraph.Elements = Paragraph
 
-		Para.SetTitle = Para.SetTitle
-		Para.SetDesc = Para.SetDesc
-		Para.Visible = Para.Visible
-		Para.Elements = Para
-
-		return Para
+		return Paragraph
 	end
 
 	return Paragraph
@@ -7644,6 +7766,2548 @@ ElementsTable.Input = (function()
 	return Element
 end)()
 
+-- ============================================================
+-- ✨ 30 NEW ELEMENTS - BataV2.0 ✨
+-- ============================================================
+
+-- [1] ProgressBar
+ElementsTable.ProgressBar = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "ProgressBar"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "ProgressBar - Missing Title")
+		Config.Min = Config.Min or 0
+		Config.Max = Config.Max or 100
+		Config.Default = Config.Default or 0
+		Config.Color = Config.Color or nil
+
+		local Bar = {
+			Value = Config.Default,
+			Min = Config.Min,
+			Max = Config.Max,
+			Type = "ProgressBar",
+			Callback = Config.Callback or function() end,
+		}
+
+		local BarFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		Bar.SetTitle = BarFrame.SetTitle
+		Bar.SetDesc = BarFrame.SetDesc
+		Bar.Visible = BarFrame.Visible
+		Bar.Elements = BarFrame
+
+		local TrackBg = New("Frame", {
+			Size = UDim2.new(1, -20, 0, 6),
+			Position = UDim2.new(0, 10, 1, -16),
+			AnchorPoint = Vector2.new(0, 1),
+			BackgroundTransparency = 0.5,
+			Parent = BarFrame.Frame,
+			ThemeTag = { BackgroundColor3 = "SliderRail" },
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+		})
+
+		local FillBar = New("Frame", {
+			Size = UDim2.new(0, 0, 1, 0),
+			BackgroundColor3 = Config.Color or Color3.fromRGB(96, 205, 255),
+			Parent = TrackBg,
+			ThemeTag = Config.Color and {} or { BackgroundColor3 = "Accent" },
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+			New("UIGradient", {
+				Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0.2) }),
+				Rotation = 0,
+			}),
+		})
+
+		local PercentLabel = New("TextLabel", {
+			Text = "0%",
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+			TextSize = 11,
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			Size = UDim2.fromOffset(40, 14),
+			TextXAlignment = Enum.TextXAlignment.Right,
+			Parent = BarFrame.Frame,
+			ThemeTag = { TextColor3 = "SubText" },
+		})
+
+		function Bar:SetValue(Value)
+			Value = math.clamp(Value, self.Min, self.Max)
+			self.Value = Value
+			local pct = (Value - self.Min) / math.max(self.Max - self.Min, 1)
+			TweenService:Create(FillBar, TweenInfo.new(0.35, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {
+				Size = UDim2.new(pct, 0, 1, 0)
+			}):Play()
+			PercentLabel.Text = math.floor(pct * 100) .. "%"
+			Library:SafeCallback(Bar.Callback, Value)
+			Library:SafeCallback(Bar.Changed, Value)
+		end
+
+		function Bar:OnChanged(Func) Bar.Changed = Func Func(Bar.Value) end
+		function Bar:Destroy() BarFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Bar:SetValue(Config.Default)
+		Library.Options[Idx] = Bar
+		return Bar
+	end
+	return Element
+end)()
+
+-- [2] Badge (status label)
+ElementsTable.Badge = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Badge"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "Badge - Missing Title")
+		Config.BadgeText = Config.BadgeText or "NEW"
+		Config.BadgeColor = Config.BadgeColor or Color3.fromRGB(96, 205, 255)
+
+		local Badge = { Type = "Badge", Value = Config.BadgeText }
+
+		local BadgeFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		Badge.SetTitle = BadgeFrame.SetTitle
+		Badge.SetDesc = BadgeFrame.SetDesc
+		Badge.Visible = BadgeFrame.Visible
+		Badge.Elements = BadgeFrame
+
+		local Pill = New("Frame", {
+			Size = UDim2.fromOffset(0, 20),
+			AutomaticSize = Enum.AutomaticSize.X,
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundColor3 = Config.BadgeColor,
+			BackgroundTransparency = 0.15,
+			Parent = BadgeFrame.Frame,
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+			New("UIPadding", { PaddingLeft = UDim.new(0, 8), PaddingRight = UDim.new(0, 8) }),
+			New("UIStroke", { Color = Config.BadgeColor, Transparency = 0.4, ApplyStrokeMode = Enum.ApplyStrokeMode.Border }),
+			New("TextLabel", {
+				Text = Config.BadgeText,
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold),
+				TextSize = 10,
+				TextColor3 = Color3.fromRGB(255, 255, 255),
+				BackgroundTransparency = 1,
+				Size = UDim2.fromScale(1, 1),
+				AutomaticSize = Enum.AutomaticSize.X,
+			}),
+		})
+
+		function Badge:SetBadge(Text, Color)
+			Pill:FindFirstChildOfClass("TextLabel").Text = Text
+			self.Value = Text
+			if Color then
+				Pill.BackgroundColor3 = Color
+				Pill.UIStroke.Color = Color
+			end
+		end
+		function Badge:Destroy() BadgeFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = Badge
+		return Badge
+	end
+	return Element
+end)()
+
+-- [3] Separator (styled divider)
+ElementsTable.Separator = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Separator"
+
+	function Element:New(Idx, Config)
+		Config.Label = Config.Label or ""
+		local Sep = { Type = "Separator" }
+
+		local Root = New("Frame", {
+			Size = UDim2.new(1, 0, 0, 20),
+			BackgroundTransparency = 1,
+			Parent = self.Container,
+			LayoutOrder = 7,
+		})
+
+		if Config.Label ~= "" then
+			New("TextLabel", {
+				Text = Config.Label,
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.SemiBold),
+				TextSize = 11,
+				Position = UDim2.fromScale(0.5, 0.5),
+				AnchorPoint = Vector2.new(0.5, 0.5),
+				BackgroundTransparency = 1,
+				Size = UDim2.fromOffset(0, 14),
+				AutomaticSize = Enum.AutomaticSize.X,
+				Parent = Root,
+				ThemeTag = { TextColor3 = "SubText" },
+			})
+		end
+
+		local lineL = New("Frame", {
+			Size = UDim2.new(0.5, Config.Label ~= "" and -10 or 0, 0, 1),
+			Position = UDim2.fromScale(0, 0.5),
+			AnchorPoint = Vector2.new(0, 0.5),
+			Parent = Root,
+			BackgroundTransparency = 0.6,
+			ThemeTag = { BackgroundColor3 = "TitleBarLine" },
+		}, { New("UIGradient", { Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(1, 0) }) }) })
+
+		local lineR = New("Frame", {
+			Size = UDim2.new(0.5, Config.Label ~= "" and -10 or 0, 0, 1),
+			Position = UDim2.fromScale(1, 0.5),
+			AnchorPoint = Vector2.new(1, 0.5),
+			Parent = Root,
+			BackgroundTransparency = 0.6,
+			ThemeTag = { BackgroundColor3 = "TitleBarLine" },
+		}, { New("UIGradient", { Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 1) }) }) })
+
+		function Sep:Destroy() Root:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = Sep
+		return Sep
+	end
+	return Element
+end)()
+
+-- [4] Rating (star rating 1-5)
+ElementsTable.Rating = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Rating"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "Rating - Missing Title")
+		Config.Max = Config.Max or 5
+		Config.Default = Config.Default or 0
+
+		local Rating = {
+			Value = Config.Default,
+			Max = Config.Max,
+			Type = "Rating",
+			Callback = Config.Callback or function() end,
+		}
+
+		local RatingFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		Rating.SetTitle = RatingFrame.SetTitle
+		Rating.SetDesc = RatingFrame.SetDesc
+		Rating.Visible = RatingFrame.Visible
+		Rating.Elements = RatingFrame
+
+		local StarsHolder = New("Frame", {
+			Size = UDim2.fromOffset(Config.Max * 22, 22),
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			Parent = RatingFrame.Frame,
+		}, {
+			New("UIListLayout", {
+				FillDirection = Enum.FillDirection.Horizontal,
+				Padding = UDim.new(0, 2),
+				VerticalAlignment = Enum.VerticalAlignment.Center,
+			}),
+		})
+
+		local Stars = {}
+
+		local function UpdateStars(val)
+			for i, star in ipairs(Stars) do
+				TweenService:Create(star, TweenInfo.new(0.15), {
+					ImageColor3 = i <= val
+						and Creator.GetThemeProperty("Accent")
+						or Creator.GetThemeProperty("SubText"),
+					Size = UDim2.fromOffset(i <= val and 20 or 16, i <= val and 20 or 16),
+				}):Play()
+			end
+		end
+
+		for i = 1, Config.Max do
+			local Star = New("ImageButton", {
+				Image = "rbxassetid://10734966248", -- lucide-star
+				Size = UDim2.fromOffset(16, 16),
+				BackgroundTransparency = 1,
+				ImageColor3 = Creator.GetThemeProperty("SubText"),
+				Parent = StarsHolder,
+				ThemeTag = {},
+			})
+			table.insert(Stars, Star)
+
+			Creator.AddSignal(Star.MouseButton1Click, function()
+				local newVal = i == Rating.Value and 0 or i
+				Rating.Value = newVal
+				UpdateStars(newVal)
+				Library:SafeCallback(Rating.Callback, newVal)
+				Library:SafeCallback(Rating.Changed, newVal)
+			end)
+			Creator.AddSignal(Star.MouseEnter, function()
+				UpdateStars(i)
+			end)
+			Creator.AddSignal(Star.MouseLeave, function()
+				UpdateStars(Rating.Value)
+			end)
+		end
+
+		function Rating:SetValue(val)
+			val = math.clamp(val, 0, self.Max)
+			self.Value = val
+			UpdateStars(val)
+			Library:SafeCallback(self.Callback, val)
+			Library:SafeCallback(self.Changed, val)
+		end
+		function Rating:OnChanged(Func) Rating.Changed = Func Func(Rating.Value) end
+		function Rating:Destroy() RatingFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		UpdateStars(Config.Default)
+		Library.Options[Idx] = Rating
+		return Rating
+	end
+	return Element
+end)()
+
+-- [5] Alert (info/warn/error/success banner)
+ElementsTable.Alert = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Alert"
+
+	local AlertColors = {
+		info    = { bg = Color3.fromRGB(30, 80, 160),    icon = "rbxassetid://10723415903" },
+		success = { bg = Color3.fromRGB(30, 130, 80),    icon = "rbxassetid://10709751939" },
+		warning = { bg = Color3.fromRGB(160, 110, 20),   icon = "rbxassetid://10709753149" },
+		error   = { bg = Color3.fromRGB(160, 35, 35),    icon = "rbxassetid://10709752996" },
+	}
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "Alert - Missing Title")
+		Config.Type = Config.Type or "info"
+		Config.Content = Config.Content or ""
+
+		local Alert = { Type = "Alert" }
+		local style = AlertColors[Config.Type] or AlertColors.info
+
+		local Root = New("Frame", {
+			Size = UDim2.new(1, 0, 0, 0),
+			AutomaticSize = Enum.AutomaticSize.Y,
+			BackgroundColor3 = style.bg,
+			BackgroundTransparency = 0.75,
+			Parent = self.Container,
+			LayoutOrder = 7,
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(0, 6) }),
+			New("UIStroke", { Color = style.bg, Transparency = 0.3, ApplyStrokeMode = Enum.ApplyStrokeMode.Border }),
+			New("UIPadding", { PaddingLeft = UDim.new(0, 10), PaddingRight = UDim.new(0, 10), PaddingTop = UDim.new(0, 8), PaddingBottom = UDim.new(0, 8) }),
+			New("UIListLayout", { Padding = UDim.new(0, 6), FillDirection = Enum.FillDirection.Horizontal, VerticalAlignment = Enum.VerticalAlignment.Top }),
+			New("ImageLabel", {
+				Image = style.icon,
+				Size = UDim2.fromOffset(16, 16),
+				BackgroundTransparency = 1,
+				ImageColor3 = Color3.fromRGB(255, 255, 255),
+				LayoutOrder = 1,
+			}),
+			New("Frame", {
+				BackgroundTransparency = 1,
+				AutomaticSize = Enum.AutomaticSize.Y,
+				Size = UDim2.new(1, -22, 0, 0),
+				LayoutOrder = 2,
+			}, {
+				New("UIListLayout", { SortOrder = Enum.SortOrder.LayoutOrder }),
+				New("TextLabel", {
+					Text = Config.Title,
+					FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold),
+					TextSize = 13,
+					TextColor3 = Color3.fromRGB(255, 255, 255),
+					BackgroundTransparency = 1,
+					TextXAlignment = Enum.TextXAlignment.Left,
+					Size = UDim2.new(1, 0, 0, 16),
+					LayoutOrder = 1,
+				}),
+				New("TextLabel", {
+					Text = Config.Content,
+					FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
+					TextSize = 12,
+					TextColor3 = Color3.fromRGB(220, 220, 220),
+					BackgroundTransparency = 1,
+					TextXAlignment = Enum.TextXAlignment.Left,
+					TextWrapped = true,
+					AutomaticSize = Enum.AutomaticSize.Y,
+					Size = UDim2.new(1, 0, 0, 0),
+					LayoutOrder = 2,
+					Visible = Config.Content ~= "",
+				}),
+			}),
+		})
+
+		function Alert:Destroy() Root:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = Alert
+		return Alert
+	end
+	return Element
+end)()
+
+-- [6] Checkbox
+ElementsTable.Checkbox = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Checkbox"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "Checkbox - Missing Title")
+
+		local Checkbox = {
+			Value = Config.Default or false,
+			Type = "Checkbox",
+			Callback = Config.Callback or function() end,
+		}
+
+		local CBFrame = Components.Element(Config.Title, Config.Description, self.Container, true, Config)
+		Checkbox.SetTitle = CBFrame.SetTitle
+		Checkbox.SetDesc = CBFrame.SetDesc
+		Checkbox.Visible = CBFrame.Visible
+		Checkbox.Elements = CBFrame
+
+		local CheckBg = New("Frame", {
+			Size = UDim2.fromOffset(18, 18),
+			Position = UDim2.new(1, -12, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 0.85,
+			Parent = CBFrame.Frame,
+			ThemeTag = { BackgroundColor3 = "Accent" },
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(0, 4) }),
+			New("UIStroke", { Transparency = 0.3, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "Accent" } }),
+		})
+
+		local CheckMark = New("ImageLabel", {
+			Image = "rbxassetid://10734966248",
+			Size = UDim2.fromOffset(12, 12),
+			Position = UDim2.fromScale(0.5, 0.5),
+			AnchorPoint = Vector2.new(0.5, 0.5),
+			BackgroundTransparency = 1,
+			ImageColor3 = Color3.fromRGB(255, 255, 255),
+			ImageTransparency = 1,
+			Parent = CheckBg,
+		})
+
+		local function UpdateVisual(val)
+			TweenService:Create(CheckBg, TweenInfo.new(0.2), {
+				BackgroundTransparency = val and 0 or 0.85
+			}):Play()
+			TweenService:Create(CheckMark, TweenInfo.new(0.15), {
+				ImageTransparency = val and 0 or 1,
+				Size = val and UDim2.fromOffset(12, 12) or UDim2.fromOffset(6, 6),
+			}):Play()
+		end
+
+		Creator.AddSignal(CBFrame.Frame.MouseButton1Click, function()
+			Checkbox.Value = not Checkbox.Value
+			UpdateVisual(Checkbox.Value)
+			Library:SafeCallback(Checkbox.Callback, Checkbox.Value)
+			Library:SafeCallback(Checkbox.Changed, Checkbox.Value)
+		end)
+
+		function Checkbox:SetValue(val)
+			self.Value = val
+			UpdateVisual(val)
+			Library:SafeCallback(self.Callback, val)
+			Library:SafeCallback(self.Changed, val)
+		end
+		function Checkbox:OnChanged(Func) Checkbox.Changed = Func Func(Checkbox.Value) end
+		function Checkbox:Destroy() CBFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		UpdateVisual(Config.Default or false)
+		Library.Options[Idx] = Checkbox
+		return Checkbox
+	end
+	return Element
+end)()
+
+-- [7] RadioGroup
+ElementsTable.RadioGroup = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "RadioGroup"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "RadioGroup - Missing Title")
+		assert(Config.Options, "RadioGroup - Missing Options table")
+
+		local Radio = {
+			Value = Config.Default or Config.Options[1],
+			Options = Config.Options,
+			Type = "RadioGroup",
+			Callback = Config.Callback or function() end,
+		}
+
+		local RGFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		Radio.SetTitle = RGFrame.SetTitle
+		Radio.SetDesc = RGFrame.SetDesc
+		Radio.Visible = RGFrame.Visible
+		Radio.Elements = RGFrame
+
+		local OptionsHolder = New("Frame", {
+			Size = UDim2.new(1, -20, 0, 0),
+			AutomaticSize = Enum.AutomaticSize.Y,
+			Position = UDim2.fromOffset(10, 0),
+			BackgroundTransparency = 1,
+			Parent = RGFrame.LabelHolder,
+			LayoutOrder = 3,
+		}, {
+			New("UIListLayout", { Padding = UDim.new(0, 6), SortOrder = Enum.SortOrder.LayoutOrder }),
+			New("UIPadding", { PaddingTop = UDim.new(0, 4), PaddingBottom = UDim.new(0, 6) }),
+		})
+
+		local Buttons = {}
+
+		local function UpdateRadio(selected)
+			for _, btn in pairs(Buttons) do
+				local isSelected = btn.Value == selected
+				TweenService:Create(btn.Outer, TweenInfo.new(0.2), {
+					BackgroundTransparency = isSelected and 0 or 0.9
+				}):Play()
+				TweenService:Create(btn.Inner, TweenInfo.new(0.15), {
+					BackgroundTransparency = isSelected and 0 or 1,
+					Size = isSelected and UDim2.fromOffset(8, 8) or UDim2.fromOffset(4, 4),
+				}):Play()
+			end
+		end
+
+		for _, opt in ipairs(Config.Options) do
+			local Row = New("TextButton", {
+				Size = UDim2.new(1, 0, 0, 22),
+				BackgroundTransparency = 1,
+				Text = "",
+				Parent = OptionsHolder,
+			}, {
+				New("UIListLayout", {
+					FillDirection = Enum.FillDirection.Horizontal,
+					Padding = UDim.new(0, 8),
+					VerticalAlignment = Enum.VerticalAlignment.Center,
+				}),
+			})
+
+			local Outer = New("Frame", {
+				Size = UDim2.fromOffset(16, 16),
+				BackgroundTransparency = 0.9,
+				Parent = Row,
+				ThemeTag = { BackgroundColor3 = "Accent" },
+			}, {
+				New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+				New("UIAspectRatioConstraint", { AspectRatio = 1 }),
+				New("UIStroke", { Transparency = 0.3, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "Accent" } }),
+			})
+
+			local Inner = New("Frame", {
+				Size = UDim2.fromOffset(4, 4),
+				Position = UDim2.fromScale(0.5, 0.5),
+				AnchorPoint = Vector2.new(0.5, 0.5),
+				BackgroundTransparency = 1,
+				Parent = Outer,
+				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+			}, {
+				New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+			})
+
+			New("TextLabel", {
+				Text = tostring(opt),
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
+				TextSize = 13,
+				TextXAlignment = Enum.TextXAlignment.Left,
+				BackgroundTransparency = 1,
+				Size = UDim2.new(1, -24, 1, 0),
+				Parent = Row,
+				ThemeTag = { TextColor3 = "Text" },
+			})
+
+			local BtnData = { Value = opt, Outer = Outer, Inner = Inner }
+			table.insert(Buttons, BtnData)
+
+			Creator.AddSignal(Row.MouseButton1Click, function()
+				Radio.Value = opt
+				UpdateRadio(opt)
+				Library:SafeCallback(Radio.Callback, opt)
+				Library:SafeCallback(Radio.Changed, opt)
+			end)
+		end
+
+		function Radio:SetValue(val)
+			self.Value = val
+			UpdateRadio(val)
+			Library:SafeCallback(self.Callback, val)
+			Library:SafeCallback(self.Changed, val)
+		end
+		function Radio:OnChanged(Func) Radio.Changed = Func Func(Radio.Value) end
+		function Radio:Destroy() RGFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		UpdateRadio(Radio.Value)
+		Library.Options[Idx] = Radio
+		return Radio
+	end
+	return Element
+end)()
+
+-- [8] NumberInput (spinbox)
+ElementsTable.NumberInput = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "NumberInput"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "NumberInput - Missing Title")
+		Config.Default = Config.Default or 0
+		Config.Step = Config.Step or 1
+		Config.Min = Config.Min or -math.huge
+		Config.Max = Config.Max or math.huge
+
+		local NI = {
+			Value = Config.Default,
+			Step = Config.Step,
+			Min = Config.Min,
+			Max = Config.Max,
+			Type = "NumberInput",
+			Callback = Config.Callback or function() end,
+		}
+
+		local NIFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		NI.SetTitle = NIFrame.SetTitle
+		NI.SetDesc = NIFrame.SetDesc
+		NI.Visible = NIFrame.Visible
+		NI.Elements = NIFrame
+
+		local Holder = New("Frame", {
+			Size = UDim2.fromOffset(110, 30),
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 0.9,
+			Parent = NIFrame.Frame,
+			ThemeTag = { BackgroundColor3 = "Element" },
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(0, 6) }),
+			New("UIStroke", { Transparency = 0.5, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "InElementBorder" } }),
+		})
+
+		local makeBtn = function(txt, side)
+			return New("TextButton", {
+				Text = txt,
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold),
+				TextSize = 16,
+				Size = UDim2.fromOffset(28, 28),
+				Position = side == "L" and UDim2.fromOffset(1, 1) or UDim2.new(1, -29, 0, 1),
+				BackgroundTransparency = 1,
+				Parent = Holder,
+				ThemeTag = { TextColor3 = "Text" },
+			})
+		end
+
+		local MinusBtn = makeBtn("−", "L")
+		local PlusBtn  = makeBtn("+", "R")
+
+		local ValBox = New("TextBox", {
+			Text = tostring(Config.Default),
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+			TextSize = 13,
+			Size = UDim2.new(1, -58, 1, 0),
+			Position = UDim2.fromOffset(30, 0),
+			BackgroundTransparency = 1,
+			TextXAlignment = Enum.TextXAlignment.Center,
+			Parent = Holder,
+			ThemeTag = { TextColor3 = "Text" },
+		})
+
+		local function set(v)
+			v = math.clamp(Library:Round(v, 0), NI.Min, NI.Max)
+			NI.Value = v
+			ValBox.Text = tostring(v)
+			Library:SafeCallback(NI.Callback, v)
+			Library:SafeCallback(NI.Changed, v)
+		end
+
+		Creator.AddSignal(MinusBtn.MouseButton1Click, function() set(NI.Value - NI.Step) end)
+		Creator.AddSignal(PlusBtn.MouseButton1Click,  function() set(NI.Value + NI.Step) end)
+		Creator.AddSignal(ValBox.FocusLost, function()
+			local n = tonumber(ValBox.Text)
+			if n then set(n) else ValBox.Text = tostring(NI.Value) end
+		end)
+
+		-- Hold to repeat
+		for _, btn in ipairs({ {MinusBtn, -1}, {PlusBtn, 1} }) do
+			local b, dir = btn[1], btn[2]
+			Creator.AddSignal(b.MouseButton1Down, function()
+				task.delay(0.5, function()
+					while b:IsDescendantOf(game) and UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+						set(NI.Value + NI.Step * dir)
+						task.wait(0.08)
+					end
+				end)
+			end)
+		end
+
+		function NI:SetValue(v) set(v) end
+		function NI:OnChanged(Func) NI.Changed = Func Func(NI.Value) end
+		function NI:Destroy() NIFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = NI
+		return NI
+	end
+	return Element
+end)()
+
+-- [9] CopyButton (button that copies text + shows feedback)
+ElementsTable.CopyButton = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "CopyButton"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "CopyButton - Missing Title")
+		Config.CopyText = Config.CopyText or ""
+
+		local CB = { Type = "CopyButton", Value = Config.CopyText }
+
+		local CBFrame = Components.Element(Config.Title, Config.Description, self.Container, true, Config)
+		CB.SetTitle = CBFrame.SetTitle
+		CB.SetDesc = CBFrame.SetDesc
+		CB.Visible = CBFrame.Visible
+		CB.Elements = CBFrame
+
+		local CopyBtn = New("TextButton", {
+			Text = "Copy",
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+			TextSize = 12,
+			Size = UDim2.fromOffset(60, 26),
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 0.85,
+			Parent = CBFrame.Frame,
+			ThemeTag = { BackgroundColor3 = "Accent", TextColor3 = "Text" },
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(0, 5) }),
+			New("UIStroke", { Transparency = 0.5, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "Accent" } }),
+		})
+
+		Creator.AddSignal(CopyBtn.MouseButton1Click, function()
+			pcall(function()
+				if setclipboard then setclipboard(CB.Value)
+				elseif toclipboard then toclipboard(CB.Value) end
+			end)
+			CopyBtn.Text = "✓ Copied"
+			task.delay(1.5, function()
+				if CopyBtn and CopyBtn.Parent then
+					CopyBtn.Text = "Copy"
+				end
+			end)
+			Library:SafeCallback(Config.Callback, CB.Value)
+		end)
+
+		function CB:SetCopyText(t) self.Value = t end
+		function CB:Destroy() CBFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = CB
+		return CB
+	end
+	return Element
+end)()
+
+-- [10] ConfirmButton (double-click to confirm)
+ElementsTable.ConfirmButton = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "ConfirmButton"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "ConfirmButton - Missing Title")
+
+		local CFB = { Type = "ConfirmButton" }
+		local CFBFrame = Components.Element(Config.Title, Config.Description, self.Container, true, Config)
+		CFB.SetTitle = CFBFrame.SetTitle
+		CFB.SetDesc  = CFBFrame.SetDesc
+		CFB.Visible  = CFBFrame.Visible
+		CFB.Elements = CFBFrame
+
+		local confirmed = false
+		local resetTask
+
+		local Btn = New("TextButton", {
+			Text = Config.ButtonText or "Click to Confirm",
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+			TextSize = 12,
+			Size = UDim2.fromOffset(0, 26),
+			AutomaticSize = Enum.AutomaticSize.X,
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 0.85,
+			Parent = CFBFrame.Frame,
+			ThemeTag = { BackgroundColor3 = "Element", TextColor3 = "Text" },
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(0, 5) }),
+			New("UIStroke", { Transparency = 0.5, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "InElementBorder" } }),
+			New("UIPadding", { PaddingLeft = UDim.new(0, 10), PaddingRight = UDim.new(0, 10) }),
+		})
+
+		Creator.AddSignal(Btn.MouseButton1Click, function()
+			if not confirmed then
+				confirmed = true
+				Btn.Text = "⚠ Confirm?"
+				TweenService:Create(Btn, TweenInfo.new(0.2), { BackgroundTransparency = 0.6 }):Play()
+				if resetTask then task.cancel(resetTask) end
+				resetTask = task.delay(2.5, function()
+					confirmed = false
+					if Btn and Btn.Parent then
+						Btn.Text = Config.ButtonText or "Click to Confirm"
+						TweenService:Create(Btn, TweenInfo.new(0.2), { BackgroundTransparency = 0.85 }):Play()
+					end
+				end)
+			else
+				confirmed = false
+				if resetTask then task.cancel(resetTask) end
+				Btn.Text = Config.ButtonText or "Click to Confirm"
+				TweenService:Create(Btn, TweenInfo.new(0.2), { BackgroundTransparency = 0.85 }):Play()
+				Library:SafeCallback(Config.Callback)
+			end
+		end)
+
+		function CFB:Destroy() CFBFrame.Frame:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = CFB
+		return CFB
+	end
+	return Element
+end)()
+
+-- [11] StatCard (shows a stat with icon + value)
+ElementsTable.StatCard = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "StatCard"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "StatCard - Missing Title")
+		Config.Value = Config.Value or "0"
+		Config.Suffix = Config.Suffix or ""
+
+		local SC = { Type = "StatCard", Value = Config.Value }
+		local SCFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		SC.SetTitle = SCFrame.SetTitle
+		SC.SetDesc  = SCFrame.SetDesc
+		SC.Visible  = SCFrame.Visible
+		SC.Elements = SCFrame
+
+		local ValLabel = New("TextLabel", {
+			Text = tostring(Config.Value) .. Config.Suffix,
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold),
+			TextSize = 20,
+			Position = UDim2.new(1, -12, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			Size = UDim2.fromOffset(0, 24),
+			AutomaticSize = Enum.AutomaticSize.X,
+			Parent = SCFrame.Frame,
+			ThemeTag = { TextColor3 = "Accent" },
+		})
+
+		function SC:SetValue(val)
+			self.Value = val
+			ValLabel.Text = tostring(val) .. (Config.Suffix or "")
+		end
+		function SC:Destroy() SCFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = SC
+		return SC
+	end
+	return Element
+end)()
+
+-- [12] MultiSlider (dual-handle range slider)
+ElementsTable.MultiSlider = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "MultiSlider"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "MultiSlider - Missing Title")
+		Config.Min = Config.Min or 0
+		Config.Max = Config.Max or 100
+		Config.Default = Config.Default or { Config.Min, Config.Max }
+		Config.Rounding = Config.Rounding or 0
+
+		local MS = {
+			Value = { Config.Default[1], Config.Default[2] },
+			Min = Config.Min, Max = Config.Max,
+			Rounding = Config.Rounding,
+			Type = "MultiSlider",
+			Callback = Config.Callback or function() end,
+		}
+
+		local MSFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		MS.SetTitle = MSFrame.SetTitle
+		MS.SetDesc  = MSFrame.SetDesc
+		MS.Visible  = MSFrame.Visible
+		MS.Elements = MSFrame
+
+		local TrackBg = New("Frame", {
+			Size = UDim2.new(1, -20, 0, 4),
+			Position = UDim2.new(0, 10, 1, -12),
+			AnchorPoint = Vector2.new(0, 1),
+			BackgroundTransparency = 0.5,
+			Parent = MSFrame.Frame,
+			ThemeTag = { BackgroundColor3 = "SliderRail" },
+		}, { New("UICorner", { CornerRadius = UDim.new(1, 0) }) })
+
+		local FillRange = New("Frame", {
+			Size = UDim2.new(0, 0, 1, 0),
+			BackgroundTransparency = 0,
+			Parent = TrackBg,
+			ThemeTag = { BackgroundColor3 = "Accent" },
+		}, { New("UICorner", { CornerRadius = UDim.new(1, 0) }) })
+
+		local ValLabel = New("TextLabel", {
+			Text = "",
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
+			TextSize = 11,
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			Size = UDim2.fromOffset(80, 14),
+			TextXAlignment = Enum.TextXAlignment.Right,
+			Parent = MSFrame.Frame,
+			ThemeTag = { TextColor3 = "SubText" },
+		})
+
+		local Handles = {}
+		for i = 1, 2 do
+			local h = New("ImageLabel", {
+				Image = "http://www.roblox.com/asset/?id=12266946128",
+				Size = UDim2.fromOffset(14, 14),
+				Position = UDim2.new(0, -7, 0.5, 0),
+				AnchorPoint = Vector2.new(0, 0.5),
+				BackgroundTransparency = 1,
+				ZIndex = 5,
+				Parent = TrackBg,
+				ThemeTag = { ImageColor3 = "Accent" },
+			})
+			Handles[i] = h
+		end
+
+		local dragging = { false, false }
+
+		local function updateVisual()
+			local pct1 = (MS.Value[1] - MS.Min) / (MS.Max - MS.Min)
+			local pct2 = (MS.Value[2] - MS.Min) / (MS.Max - MS.Min)
+			Handles[1].Position = UDim2.new(pct1, -7, 0.5, 0)
+			Handles[2].Position = UDim2.new(pct2, -7, 0.5, 0)
+			FillRange.Position = UDim2.new(pct1, 0, 0, 0)
+			FillRange.Size     = UDim2.new(pct2 - pct1, 0, 1, 0)
+			ValLabel.Text = tostring(MS.Value[1]) .. " – " .. tostring(MS.Value[2])
+		end
+
+		for i = 1, 2 do
+			Creator.AddSignal(Handles[i].InputBegan, function(inp)
+				if inp.UserInputType == Enum.UserInputType.MouseButton1 or inp.UserInputType == Enum.UserInputType.Touch then
+					dragging[i] = true
+				end
+			end)
+			Creator.AddSignal(Handles[i].InputEnded, function(inp)
+				if inp.UserInputType == Enum.UserInputType.MouseButton1 or inp.UserInputType == Enum.UserInputType.Touch then
+					dragging[i] = false
+				end
+			end)
+		end
+
+		Creator.AddSignal(UserInputService.InputChanged, function(inp)
+			for i = 1, 2 do
+				if dragging[i] then
+					local pos = inp.Position
+					local scale = math.clamp((pos.X - TrackBg.AbsolutePosition.X) / TrackBg.AbsoluteSize.X, 0, 1)
+					local raw = MS.Min + (MS.Max - MS.Min) * scale
+					local val = Library:Round(raw, MS.Rounding)
+					if i == 1 then val = math.min(val, MS.Value[2]) else val = math.max(val, MS.Value[1]) end
+					MS.Value[i] = val
+					updateVisual()
+					Library:SafeCallback(MS.Callback, MS.Value)
+					Library:SafeCallback(MS.Changed, MS.Value)
+				end
+			end
+		end)
+
+		function MS:SetValue(v)
+			self.Value = { math.clamp(v[1], self.Min, self.Max), math.clamp(v[2], self.Min, self.Max) }
+			updateVisual()
+			Library:SafeCallback(self.Callback, self.Value)
+			Library:SafeCallback(self.Changed, self.Value)
+		end
+		function MS:OnChanged(Func) MS.Changed = Func Func(MS.Value) end
+		function MS:Destroy() MSFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		updateVisual()
+		Library.Options[Idx] = MS
+		return MS
+	end
+	return Element
+end)()
+
+-- [13] Accordion (collapsible content section)
+ElementsTable.Accordion = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Accordion"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "Accordion - Missing Title")
+		Config.Open = Config.Open or false
+
+		local Acc = { Type = "Accordion", Opened = Config.Open, Elements = {} }
+
+		local Root = New("Frame", {
+			Size = UDim2.new(1, 0, 0, 36),
+			BackgroundTransparency = 0.9,
+			Parent = self.Container,
+			LayoutOrder = 7,
+			ClipsDescendants = true,
+			ThemeTag = { BackgroundColor3 = "Element" },
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(0, 6) }),
+			New("UIStroke", { Transparency = 0.5, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "ElementBorder" } }),
+		})
+
+		local Header = New("TextButton", {
+			Size = UDim2.new(1, 0, 0, 36),
+			BackgroundTransparency = 1,
+			Text = "",
+			Parent = Root,
+		}, {
+			New("TextLabel", {
+				Text = Config.Title,
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+				TextSize = 13,
+				TextXAlignment = Enum.TextXAlignment.Left,
+				Position = UDim2.fromOffset(12, 0),
+				BackgroundTransparency = 1,
+				Size = UDim2.new(1, -48, 1, 0),
+				ThemeTag = { TextColor3 = "Text" },
+			}),
+			New("ImageLabel", {
+				Image = "rbxassetid://10734886735",
+				Size = UDim2.fromOffset(14, 14),
+				Position = UDim2.new(1, -24, 0.5, 0),
+				AnchorPoint = Vector2.new(1, 0.5),
+				BackgroundTransparency = 1,
+				Rotation = Config.Open and 180 or 0,
+				Name = "Chevron",
+				ThemeTag = { ImageColor3 = "SubText" },
+			}),
+		})
+
+		local ContentFrame = New("Frame", {
+			Size = UDim2.new(1, -16, 0, 0),
+			AutomaticSize = Enum.AutomaticSize.Y,
+			Position = UDim2.fromOffset(8, 38),
+			BackgroundTransparency = 1,
+			Parent = Root,
+		}, {
+			New("UIListLayout", { Padding = UDim.new(0, 5), SortOrder = Enum.SortOrder.LayoutOrder }),
+			New("UIPadding", { PaddingBottom = UDim.new(0, 8) }),
+		})
+
+		local contentLayout = ContentFrame:FindFirstChildOfClass("UIListLayout")
+
+		local function getContentHeight()
+			return contentLayout.AbsoluteContentSize.Y + 8
+		end
+
+		local function toggle(open)
+			Acc.Opened = open
+			local chevron = Header:FindFirstChild("Chevron")
+			TweenService:Create(chevron, TweenInfo.new(0.25, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { Rotation = open and 180 or 0 }):Play()
+			if open then
+				Root.Size = UDim2.new(1, 0, 0, 36 + getContentHeight())
+			else
+				Root.Size = UDim2.new(1, 0, 0, 36)
+			end
+		end
+
+		Creator.AddSignal(contentLayout:GetPropertyChangedSignal("AbsoluteContentSize"), function()
+			if Acc.Opened then
+				Root.Size = UDim2.new(1, 0, 0, 36 + getContentHeight())
+			end
+		end)
+
+		Creator.AddSignal(Header.MouseButton1Click, function()
+			toggle(not Acc.Opened)
+		end)
+
+		Acc.Container = ContentFrame
+
+		function Acc:AddToggle(idx, cfg) return Elements.AddToggle({ Container = ContentFrame, ScrollFrame = self.ScrollFrame, Library = Library }, idx, cfg) end
+		function Acc:AddSlider(idx, cfg) return Elements.AddSlider({ Container = ContentFrame, ScrollFrame = self.ScrollFrame, Library = Library }, idx, cfg) end
+		function Acc:AddButton(cfg) return Elements.AddButton({ Container = ContentFrame, ScrollFrame = self.ScrollFrame, Library = Library }, nil, cfg) end
+		function Acc:AddParagraph(cfg) return Elements.AddParagraph({ Container = ContentFrame, ScrollFrame = self.ScrollFrame, Library = Library }, nil, cfg) end
+		function Acc:Open() toggle(true) end
+		function Acc:Close() toggle(false) end
+		function Acc:Destroy() Root:Destroy() Library.Options[Idx] = nil end
+
+		if Config.Open then toggle(true) end
+
+		Library.Options[Idx] = Acc
+		return Acc
+	end
+	return Element
+end)()
+
+-- [14] Timeline (vertical event list)
+ElementsTable.Timeline = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Timeline"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "Timeline - Missing Title")
+		Config.Events = Config.Events or {}
+
+		local TL = { Type = "Timeline" }
+
+		local TLFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		TL.SetTitle = TLFrame.SetTitle
+		TL.SetDesc  = TLFrame.SetDesc
+		TL.Visible  = TLFrame.Visible
+		TL.Elements = TLFrame
+
+		local EventsHolder = New("Frame", {
+			Size = UDim2.new(1, -20, 0, 0),
+			AutomaticSize = Enum.AutomaticSize.Y,
+			Position = UDim2.fromOffset(10, 0),
+			BackgroundTransparency = 1,
+			Parent = TLFrame.LabelHolder,
+			LayoutOrder = 3,
+		}, {
+			New("UIListLayout", { Padding = UDim.new(0, 0), SortOrder = Enum.SortOrder.LayoutOrder }),
+			New("UIPadding", { PaddingTop = UDim.new(0, 4), PaddingBottom = UDim.new(0, 8) }),
+		})
+
+		for i, ev in ipairs(Config.Events) do
+			local isLast = i == #Config.Events
+			local Row = New("Frame", {
+				Size = UDim2.new(1, 0, 0, 0),
+				AutomaticSize = Enum.AutomaticSize.Y,
+				BackgroundTransparency = 1,
+				Parent = EventsHolder,
+				LayoutOrder = i,
+			}, {
+				New("Frame", {
+					Size = UDim2.fromOffset(2, 0),
+					Position = UDim2.fromOffset(6, 10),
+					BackgroundTransparency = isLast and 1 or 0.6,
+					AutomaticSize = Enum.AutomaticSize.Y,
+					ThemeTag = { BackgroundColor3 = "TitleBarLine" },
+				}),
+				New("Frame", {
+					Size = UDim2.fromOffset(10, 10),
+					Position = UDim2.fromOffset(1, 3),
+					BackgroundTransparency = 0,
+					ThemeTag = { BackgroundColor3 = "Accent" },
+				}, { New("UICorner", { CornerRadius = UDim.new(1, 0) }), New("UIAspectRatioConstraint", { AspectRatio = 1 }) }),
+				New("Frame", {
+					Size = UDim2.new(1, -20, 0, 0),
+					AutomaticSize = Enum.AutomaticSize.Y,
+					Position = UDim2.fromOffset(20, 0),
+					BackgroundTransparency = 1,
+				}, {
+					New("UIListLayout", { SortOrder = Enum.SortOrder.LayoutOrder }),
+					New("UIPadding", { PaddingBottom = UDim.new(0, isLast and 0 or 10) }),
+					New("TextLabel", {
+						Text = ev.Label or "",
+						FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+						TextSize = 13,
+						TextXAlignment = Enum.TextXAlignment.Left,
+						BackgroundTransparency = 1,
+						Size = UDim2.new(1, 0, 0, 16),
+						LayoutOrder = 1,
+						ThemeTag = { TextColor3 = "Text" },
+					}),
+					ev.Time and New("TextLabel", {
+						Text = ev.Time,
+						FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
+						TextSize = 11,
+						TextXAlignment = Enum.TextXAlignment.Left,
+						BackgroundTransparency = 1,
+						Size = UDim2.new(1, 0, 0, 13),
+						LayoutOrder = 2,
+						ThemeTag = { TextColor3 = "SubText" },
+					}) or nil,
+				}),
+			})
+		end
+
+		function TL:Destroy() TLFrame.Frame:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = TL
+		return TL
+	end
+	return Element
+end)()
+
+-- [15] QuickActions (row of small icon buttons)
+ElementsTable.QuickActions = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "QuickActions"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "QuickActions - Missing Title")
+		assert(Config.Actions, "QuickActions - Missing Actions table")
+
+		local QA = { Type = "QuickActions" }
+		local QAFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		QA.SetTitle = QAFrame.SetTitle
+		QA.SetDesc  = QAFrame.SetDesc
+		QA.Visible  = QAFrame.Visible
+		QA.Elements = QAFrame
+
+		local ActionsHolder = New("Frame", {
+			Size = UDim2.fromOffset(0, 30),
+			AutomaticSize = Enum.AutomaticSize.X,
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			Parent = QAFrame.Frame,
+		}, {
+			New("UIListLayout", {
+				FillDirection = Enum.FillDirection.Horizontal,
+				Padding = UDim.new(0, 4),
+				VerticalAlignment = Enum.VerticalAlignment.Center,
+				HorizontalAlignment = Enum.HorizontalAlignment.Right,
+			}),
+		})
+
+		for _, action in ipairs(Config.Actions) do
+			local iconImg = action.Icon and Library:GetIcon(action.Icon) or action.Image or ""
+
+			local Btn = New("TextButton", {
+				Size = UDim2.fromOffset(30, 30),
+				BackgroundTransparency = 0.88,
+				Text = action.Icon and "" or (action.Text or ""),
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+				TextSize = 11,
+				Parent = ActionsHolder,
+				ThemeTag = { BackgroundColor3 = "Element", TextColor3 = "Text" },
+			}, {
+				New("UICorner", { CornerRadius = UDim.new(0, 6) }),
+				New("UIStroke", { Transparency = 0.6, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "InElementBorder" } }),
+				iconImg ~= "" and New("ImageLabel", {
+					Image = iconImg,
+					Size = UDim2.fromOffset(14, 14),
+					Position = UDim2.fromScale(0.5, 0.5),
+					AnchorPoint = Vector2.new(0.5, 0.5),
+					BackgroundTransparency = 1,
+					ThemeTag = { ImageColor3 = "Text" },
+				}) or nil,
+			})
+
+			local Motor, SetT = Creator.SpringMotor(0.88, Btn, "BackgroundTransparency")
+			Creator.AddSignal(Btn.MouseEnter, function() SetT(0.75) end)
+			Creator.AddSignal(Btn.MouseLeave, function() SetT(0.88) end)
+			Creator.AddSignal(Btn.MouseButton1Down, function() SetT(0.95) end)
+			Creator.AddSignal(Btn.MouseButton1Up, function() SetT(0.75) end)
+			Creator.AddSignal(Btn.MouseButton1Click, function()
+				Library:SafeCallback(action.Callback)
+			end)
+		end
+
+		function QA:Destroy() QAFrame.Frame:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = QA
+		return QA
+	end
+	return Element
+end)()
+
+-- [16] ScrollableList (a scrollable item list inside an element)
+ElementsTable.ScrollableList = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "ScrollableList"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "ScrollableList - Missing Title")
+		Config.Items = Config.Items or {}
+		Config.Height = Config.Height or 120
+
+		local SL = {
+			Type = "ScrollableList",
+			Items = Config.Items,
+			Value = nil,
+			Callback = Config.Callback or function() end,
+		}
+
+		local SLFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		SL.SetTitle = SLFrame.SetTitle
+		SL.SetDesc  = SLFrame.SetDesc
+		SL.Visible  = SLFrame.Visible
+		SL.Elements = SLFrame
+
+		local ListContainer = New("ScrollingFrame", {
+			Size = UDim2.new(1, -20, 0, Config.Height),
+			Position = UDim2.fromOffset(10, 0),
+			BackgroundTransparency = 0.95,
+			Parent = SLFrame.LabelHolder,
+			LayoutOrder = 3,
+			ScrollBarThickness = 2,
+			ScrollBarImageTransparency = 0.5,
+			CanvasSize = UDim2.fromScale(0, 0),
+			ScrollingDirection = Enum.ScrollingDirection.Y,
+			ThemeTag = { BackgroundColor3 = "Element", ScrollBarImageColor3 = "Accent" },
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(0, 5) }),
+			New("UIListLayout", { Padding = UDim.new(0, 1), SortOrder = Enum.SortOrder.LayoutOrder }),
+		})
+
+		local listLayout = ListContainer:FindFirstChildOfClass("UIListLayout")
+
+		local ItemButtons = {}
+
+		local function selectItem(val)
+			SL.Value = val
+			for _, btn in pairs(ItemButtons) do
+				local isSelected = btn.ItemValue == val
+				TweenService:Create(btn.Frame, TweenInfo.new(0.15), {
+					BackgroundTransparency = isSelected and 0.7 or 1
+				}):Play()
+			end
+			Library:SafeCallback(SL.Callback, val)
+			Library:SafeCallback(SL.Changed, val)
+		end
+
+		local function buildList(items)
+			for _, c in ipairs(ListContainer:GetChildren()) do
+				if not c:IsA("UIListLayout") then c:Destroy() end
+			end
+			ItemButtons = {}
+			for i, item in ipairs(items) do
+				local ItemBtn = New("TextButton", {
+					Size = UDim2.new(1, 0, 0, 28),
+					BackgroundTransparency = 1,
+					Text = "",
+					Parent = ListContainer,
+					LayoutOrder = i,
+					ThemeTag = { BackgroundColor3 = "Accent" },
+				}, {
+					New("UICorner", { CornerRadius = UDim.new(0, 4) }),
+					New("TextLabel", {
+						Text = tostring(item),
+						FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
+						TextSize = 12,
+						TextXAlignment = Enum.TextXAlignment.Left,
+						Position = UDim2.fromOffset(8, 0),
+						BackgroundTransparency = 1,
+						Size = UDim2.new(1, -16, 1, 0),
+						ThemeTag = { TextColor3 = "Text" },
+					}),
+				})
+				local bd = { Frame = ItemBtn, ItemValue = item }
+				table.insert(ItemButtons, bd)
+				Creator.AddSignal(ItemBtn.MouseButton1Click, function() selectItem(item) end)
+			end
+			ListContainer.CanvasSize = UDim2.new(0, 0, 0, listLayout.AbsoluteContentSize.Y)
+		end
+
+		Creator.AddSignal(listLayout:GetPropertyChangedSignal("AbsoluteContentSize"), function()
+			ListContainer.CanvasSize = UDim2.new(0, 0, 0, listLayout.AbsoluteContentSize.Y)
+		end)
+
+		buildList(Config.Items)
+
+		function SL:SetItems(items)
+			self.Items = items
+			buildList(items)
+		end
+		function SL:SetValue(val) selectItem(val) end
+		function SL:OnChanged(Func) SL.Changed = Func Func(SL.Value) end
+		function SL:Destroy() SLFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = SL
+		return SL
+	end
+	return Element
+end)()
+
+-- [17] HotkeyRecorder (record key combination)
+ElementsTable.HotkeyRecorder = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "HotkeyRecorder"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "HotkeyRecorder - Missing Title")
+
+		local HR = {
+			Type = "HotkeyRecorder",
+			Value = Config.Default or {},
+			Recording = false,
+			Callback = Config.Callback or function() end,
+		}
+
+		local HRFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		HR.SetTitle = HRFrame.SetTitle
+		HR.SetDesc  = HRFrame.SetDesc
+		HR.Visible  = HRFrame.Visible
+		HR.Elements = HRFrame
+
+		local DisplayLabel = New("TextLabel", {
+			Text = "None",
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
+			TextSize = 12,
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			Size = UDim2.fromOffset(120, 14),
+			TextXAlignment = Enum.TextXAlignment.Right,
+			Parent = HRFrame.Frame,
+			ThemeTag = { TextColor3 = "SubText" },
+		})
+
+		local RecBtn = New("TextButton", {
+			Text = "Record",
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+			TextSize = 11,
+			Size = UDim2.fromOffset(52, 22),
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 0.85,
+			Parent = HRFrame.Frame,
+			ThemeTag = { BackgroundColor3 = "Element", TextColor3 = "Text" },
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(0, 4) }),
+			New("UIStroke", { Transparency = 0.5, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "InElementBorder" } }),
+		})
+
+		-- Arrange display + button
+		DisplayLabel.Position = UDim2.new(1, -72, 0.5, 0)
+		DisplayLabel.Size = UDim2.fromOffset(80, 14)
+
+		local heldKeys = {}
+		local recConn
+
+		local function formatKeys(keys)
+			if #keys == 0 then return "None" end
+			local names = {}
+			for _, k in ipairs(keys) do
+				local n = tostring(k):gsub("Enum.KeyCode.", "")
+				table.insert(names, n)
+			end
+			return table.concat(names, " + ")
+		end
+
+		Creator.AddSignal(RecBtn.MouseButton1Click, function()
+			if HR.Recording then
+				HR.Recording = false
+				RecBtn.Text = "Record"
+				TweenService:Create(RecBtn, TweenInfo.new(0.2), { BackgroundTransparency = 0.85 }):Play()
+				if recConn then recConn:Disconnect() recConn = nil end
+				DisplayLabel.Text = formatKeys(HR.Value)
+				Library:SafeCallback(HR.Callback, HR.Value)
+				Library:SafeCallback(HR.Changed, HR.Value)
+			else
+				HR.Recording = true
+				HR.Value = {}
+				heldKeys = {}
+				RecBtn.Text = "● Stop"
+				TweenService:Create(RecBtn, TweenInfo.new(0.2), { BackgroundTransparency = 0.6 }):Play()
+				DisplayLabel.Text = "Press keys..."
+
+				recConn = UserInputService.InputBegan:Connect(function(inp)
+					if HR.Recording and inp.KeyCode ~= Enum.KeyCode.Unknown then
+						if not table.find(heldKeys, inp.KeyCode) then
+							table.insert(heldKeys, inp.KeyCode)
+							HR.Value = table.clone(heldKeys)
+							DisplayLabel.Text = formatKeys(HR.Value)
+						end
+					end
+				end)
+			end
+		end)
+
+		function HR:SetValue(v)
+			self.Value = v
+			DisplayLabel.Text = formatKeys(v)
+		end
+		function HR:OnChanged(Func) HR.Changed = Func Func(HR.Value) end
+		function HR:Destroy() HRFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = HR
+		return HR
+	end
+	return Element
+end)()
+
+-- [18] Timer element
+ElementsTable.Timer = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Timer"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "Timer - Missing Title")
+		Config.CountDown = Config.CountDown or false
+		Config.StartValue = Config.StartValue or (Config.CountDown and 60 or 0)
+
+		local Tim = {
+			Type = "Timer",
+			Running = false,
+			Value = Config.StartValue,
+			CountDown = Config.CountDown,
+			Callback = Config.Callback or function() end,
+		}
+
+		local TFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		Tim.SetTitle = TFrame.SetTitle
+		Tim.SetDesc  = TFrame.SetDesc
+		Tim.Visible  = TFrame.Visible
+		Tim.Elements = TFrame
+
+		local function fmtTime(s)
+			s = math.floor(math.abs(s))
+			return string.format("%02d:%02d", math.floor(s / 60), s % 60)
+		end
+
+		local TimeLabel = New("TextLabel", {
+			Text = fmtTime(Config.StartValue),
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold),
+			TextSize = 18,
+			BackgroundTransparency = 1,
+			Size = UDim2.fromOffset(60, 22),
+			Position = UDim2.new(1, -120, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			TextXAlignment = Enum.TextXAlignment.Right,
+			Parent = TFrame.Frame,
+			ThemeTag = { TextColor3 = "Accent" },
+		})
+
+		local BtnHolder = New("Frame", {
+			Size = UDim2.fromOffset(52, 30),
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			Parent = TFrame.Frame,
+		}, {
+			New("UIListLayout", { FillDirection = Enum.FillDirection.Horizontal, Padding = UDim.new(0, 4), VerticalAlignment = Enum.VerticalAlignment.Center }),
+		})
+
+		local function makeSmallBtn(txt)
+			return New("TextButton", {
+				Text = txt,
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold),
+				TextSize = 12,
+				Size = UDim2.fromOffset(24, 24),
+				BackgroundTransparency = 0.85,
+				Parent = BtnHolder,
+				ThemeTag = { BackgroundColor3 = "Element", TextColor3 = "Text" },
+			}, { New("UICorner", { CornerRadius = UDim.new(0, 4) }) })
+		end
+
+		local PlayBtn  = makeSmallBtn("▶")
+		local ResetBtn = makeSmallBtn("↺")
+
+		local tickConn
+		local function stopTick()
+			if tickConn then tickConn:Disconnect() tickConn = nil end
+		end
+		local function startTick()
+			stopTick()
+			tickConn = RunService.Heartbeat:Connect(function(dt)
+				if Tim.Running then
+					Tim.Value = Tim.Value + (Tim.CountDown and -dt or dt)
+					TimeLabel.Text = fmtTime(Tim.Value)
+					Library:SafeCallback(Tim.Callback, Tim.Value)
+					if Tim.CountDown and Tim.Value <= 0 then
+						Tim.Value = 0
+						Tim.Running = false
+						PlayBtn.Text = "▶"
+						stopTick()
+						Library:SafeCallback(Config.OnEnd)
+					end
+				end
+			end)
+		end
+
+		Creator.AddSignal(PlayBtn.MouseButton1Click, function()
+			Tim.Running = not Tim.Running
+			PlayBtn.Text = Tim.Running and "⏸" or "▶"
+			if Tim.Running then startTick() else stopTick() end
+		end)
+
+		Creator.AddSignal(ResetBtn.MouseButton1Click, function()
+			Tim.Running = false
+			PlayBtn.Text = "▶"
+			stopTick()
+			Tim.Value = Config.StartValue
+			TimeLabel.Text = fmtTime(Config.StartValue)
+		end)
+
+		function Tim:Destroy() stopTick() TFrame.Frame:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = Tim
+		return Tim
+	end
+	return Element
+end)()
+
+-- [19] ImagePicker (icon grid selector)
+ElementsTable.ImagePicker = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "ImagePicker"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "ImagePicker - Missing Title")
+		Config.Images = Config.Images or {}
+		Config.Columns = Config.Columns or 4
+
+		local IP = {
+			Type = "ImagePicker",
+			Value = Config.Default or nil,
+			Callback = Config.Callback or function() end,
+		}
+
+		local IPFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		IP.SetTitle = IPFrame.SetTitle
+		IP.SetDesc  = IPFrame.SetDesc
+		IP.Visible  = IPFrame.Visible
+		IP.Elements = IPFrame
+
+		local cellSize = 34
+		local cols = Config.Columns
+		local rows = math.ceil(#Config.Images / cols)
+		local gridH = rows * cellSize + (rows - 1) * 4
+
+		local Grid = New("Frame", {
+			Size = UDim2.new(1, -20, 0, gridH),
+			Position = UDim2.fromOffset(10, 0),
+			BackgroundTransparency = 1,
+			Parent = IPFrame.LabelHolder,
+			LayoutOrder = 3,
+		}, {
+			New("UIGridLayout", {
+				CellSize = UDim2.fromOffset(cellSize, cellSize),
+				CellPaddingSize = UDim2.fromOffset(4, 4),
+				SortOrder = Enum.SortOrder.LayoutOrder,
+			}),
+			New("UIPadding", { PaddingTop = UDim.new(0, 4), PaddingBottom = UDim.new(0, 4) }),
+		})
+
+		local selectedBtn = nil
+
+		for i, img in ipairs(Config.Images) do
+			local Btn = New("ImageButton", {
+				Image = img.Image or img,
+				Size = UDim2.fromOffset(cellSize, cellSize),
+				BackgroundTransparency = 0.88,
+				Parent = Grid,
+				LayoutOrder = i,
+				ThemeTag = { BackgroundColor3 = "Element", ImageColor3 = "Text" },
+			}, {
+				New("UICorner", { CornerRadius = UDim.new(0, 6) }),
+				New("UIStroke", { Transparency = 1, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "Accent" } }),
+			})
+
+			Creator.AddSignal(Btn.MouseButton1Click, function()
+				if selectedBtn then
+					selectedBtn.UIStroke.Transparency = 1
+					TweenService:Create(selectedBtn, TweenInfo.new(0.15), { BackgroundTransparency = 0.88 }):Play()
+				end
+				selectedBtn = Btn
+				Btn.UIStroke.Transparency = 0
+				TweenService:Create(Btn, TweenInfo.new(0.15), { BackgroundTransparency = 0.6 }):Play()
+				IP.Value = img.Image or img
+				Library:SafeCallback(IP.Callback, IP.Value)
+				Library:SafeCallback(IP.Changed, IP.Value)
+			end)
+		end
+
+		function IP:OnChanged(Func) IP.Changed = Func Func(IP.Value) end
+		function IP:Destroy() IPFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = IP
+		return IP
+	end
+	return Element
+end)()
+
+-- [20] Stepper (step/wizard control)
+ElementsTable.Stepper = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Stepper"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "Stepper - Missing Title")
+		assert(Config.Steps, "Stepper - Missing Steps table")
+
+		local ST = {
+			Type = "Stepper",
+			Value = 1,
+			Steps = Config.Steps,
+			Callback = Config.Callback or function() end,
+		}
+
+		local STFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		ST.SetTitle = STFrame.SetTitle
+		ST.SetDesc  = STFrame.SetDesc
+		ST.Visible  = STFrame.Visible
+		ST.Elements = STFrame
+
+		local Holder = New("Frame", {
+			Size = UDim2.new(1, -20, 0, 0),
+			AutomaticSize = Enum.AutomaticSize.Y,
+			Position = UDim2.fromOffset(10, 0),
+			BackgroundTransparency = 1,
+			Parent = STFrame.LabelHolder,
+			LayoutOrder = 3,
+		}, {
+			New("UIListLayout", { FillDirection = Enum.FillDirection.Horizontal, VerticalAlignment = Enum.VerticalAlignment.Center, SortOrder = Enum.SortOrder.LayoutOrder }),
+			New("UIPadding", { PaddingTop = UDim.new(0, 6), PaddingBottom = UDim.new(0, 6) }),
+		})
+
+		local Dots = {}
+		local Labels = {}
+
+		for i, step in ipairs(Config.Steps) do
+			if i > 1 then
+				New("Frame", {
+					Size = UDim2.new(1 / (#Config.Steps * 2), 0, 0, 2),
+					BackgroundTransparency = 0.6,
+					Parent = Holder,
+					LayoutOrder = i * 10 - 1,
+					ThemeTag = { BackgroundColor3 = "TitleBarLine" },
+				})
+			end
+			local col = New("Frame", {
+				Size = UDim2.fromOffset(0, 40),
+				AutomaticSize = Enum.AutomaticSize.X,
+				BackgroundTransparency = 1,
+				Parent = Holder,
+				LayoutOrder = i * 10,
+			}, {
+				New("UIListLayout", { HorizontalAlignment = Enum.HorizontalAlignment.Center, SortOrder = Enum.SortOrder.LayoutOrder }),
+			})
+
+			local dot = New("Frame", {
+				Size = UDim2.fromOffset(20, 20),
+				BackgroundTransparency = 0.8,
+				Parent = col,
+				LayoutOrder = 1,
+				ThemeTag = { BackgroundColor3 = "Accent" },
+			}, {
+				New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+				New("UIAspectRatioConstraint", { AspectRatio = 1 }),
+				New("UIStroke", { Transparency = 0.4, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "Accent" } }),
+				New("TextLabel", {
+					Text = tostring(i),
+					FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold),
+					TextSize = 11,
+					TextColor3 = Color3.fromRGB(255, 255, 255),
+					BackgroundTransparency = 1,
+					Size = UDim2.fromScale(1, 1),
+				}),
+			})
+
+			local lbl = New("TextLabel", {
+				Text = step,
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
+				TextSize = 10,
+				BackgroundTransparency = 1,
+				Size = UDim2.fromOffset(50, 13),
+				Parent = col,
+				TextXAlignment = Enum.TextXAlignment.Center,
+				TextWrapped = true,
+				LayoutOrder = 2,
+				ThemeTag = { TextColor3 = "SubText" },
+			})
+
+			Dots[i] = dot
+			Labels[i] = lbl
+		end
+
+		local PrevBtn = New("TextButton", {
+			Text = "← Back",
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+			TextSize = 12,
+			Size = UDim2.fromOffset(65, 26),
+			Position = UDim2.fromOffset(10, 0),
+			BackgroundTransparency = 0.85,
+			Parent = STFrame.LabelHolder,
+			LayoutOrder = 4,
+			ThemeTag = { BackgroundColor3 = "Element", TextColor3 = "Text" },
+		}, { New("UICorner", { CornerRadius = UDim.new(0, 5) }) })
+
+		local NextBtn = New("TextButton", {
+			Text = "Next →",
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+			TextSize = 12,
+			Size = UDim2.fromOffset(65, 26),
+			Position = UDim2.new(1, -10, 0, 0),
+			AnchorPoint = Vector2.new(1, 0),
+			BackgroundTransparency = 0.85,
+			Parent = STFrame.LabelHolder,
+			LayoutOrder = 4,
+			ThemeTag = { BackgroundColor3 = "Accent", TextColor3 = "Text" },
+		}, { New("UICorner", { CornerRadius = UDim.new(0, 5) }) })
+
+		local function updateDots()
+			for i, dot in ipairs(Dots) do
+				local active = i == ST.Value
+				local done   = i < ST.Value
+				TweenService:Create(dot, TweenInfo.new(0.2), {
+					BackgroundTransparency = active and 0 or (done and 0.3 or 0.8)
+				}):Play()
+			end
+			PrevBtn.Visible = ST.Value > 1
+			NextBtn.Text = ST.Value == #Config.Steps and "✓ Done" or "Next →"
+		end
+
+		Creator.AddSignal(PrevBtn.MouseButton1Click, function()
+			if ST.Value > 1 then
+				ST.Value = ST.Value - 1
+				updateDots()
+				Library:SafeCallback(ST.Callback, ST.Value)
+				Library:SafeCallback(ST.Changed, ST.Value)
+			end
+		end)
+		Creator.AddSignal(NextBtn.MouseButton1Click, function()
+			if ST.Value < #Config.Steps then
+				ST.Value = ST.Value + 1
+				updateDots()
+				Library:SafeCallback(ST.Callback, ST.Value)
+				Library:SafeCallback(ST.Changed, ST.Value)
+			else
+				Library:SafeCallback(Config.OnComplete)
+			end
+		end)
+
+		function ST:SetStep(s)
+			self.Value = math.clamp(s, 1, #self.Steps)
+			updateDots()
+			Library:SafeCallback(self.Callback, self.Value)
+			Library:SafeCallback(self.Changed, self.Value)
+		end
+		function ST:OnChanged(Func) ST.Changed = Func Func(ST.Value) end
+		function ST:Destroy() STFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		updateDots()
+		Library.Options[Idx] = ST
+		return ST
+	end
+	return Element
+end)()
+
+-- [21] TagInput (input with multi-tag chips)
+ElementsTable.TagInput = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "TagInput"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "TagInput - Missing Title")
+		Config.MaxTags = Config.MaxTags or 8
+		Config.Placeholder = Config.Placeholder or "Type + Enter..."
+
+		local TI = {
+			Type = "TagInput",
+			Value = Config.Default and table.clone(Config.Default) or {},
+			Callback = Config.Callback or function() end,
+		}
+
+		local TIFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		TI.SetTitle = TIFrame.SetTitle
+		TI.SetDesc  = TIFrame.SetDesc
+		TI.Visible  = TIFrame.Visible
+		TI.Elements = TIFrame
+
+		local TagsArea = New("Frame", {
+			Size = UDim2.new(1, -20, 0, 0),
+			AutomaticSize = Enum.AutomaticSize.Y,
+			Position = UDim2.fromOffset(10, 0),
+			BackgroundTransparency = 1,
+			Parent = TIFrame.LabelHolder,
+			LayoutOrder = 3,
+		}, {
+			New("UIListLayout", {
+				FillDirection = Enum.FillDirection.Horizontal,
+				Padding = UDim.new(0, 4),
+				VerticalAlignment = Enum.VerticalAlignment.Center,
+				Wraps = true,
+			}),
+			New("UIPadding", { PaddingTop = UDim.new(0, 4), PaddingBottom = UDim.new(0, 4) }),
+		})
+
+		local chips = {}
+
+		local function removeTag(tag)
+			for i, t in ipairs(TI.Value) do
+				if t == tag then table.remove(TI.Value, i) break end
+			end
+			if chips[tag] then chips[tag]:Destroy() chips[tag] = nil end
+			Library:SafeCallback(TI.Callback, TI.Value)
+			Library:SafeCallback(TI.Changed, TI.Value)
+		end
+
+		local function addTag(tag)
+			tag = tag:match("^%s*(.-)%s*$")
+			if tag == "" or table.find(TI.Value, tag) or #TI.Value >= Config.MaxTags then return end
+			table.insert(TI.Value, tag)
+			local chip = New("TextButton", {
+				Text = "",
+				Size = UDim2.fromOffset(0, 22),
+				AutomaticSize = Enum.AutomaticSize.X,
+				BackgroundTransparency = 0.75,
+				Parent = TagsArea,
+				ThemeTag = { BackgroundColor3 = "Accent" },
+			}, {
+				New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+				New("UIPadding", { PaddingLeft = UDim.new(0, 8), PaddingRight = UDim.new(0, 26) }),
+				New("TextLabel", {
+					Text = tag,
+					FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+					TextSize = 11,
+					TextColor3 = Color3.fromRGB(255, 255, 255),
+					BackgroundTransparency = 1,
+					Size = UDim2.fromScale(1, 1),
+					AutomaticSize = Enum.AutomaticSize.X,
+				}),
+				New("TextButton", {
+					Text = "×",
+					FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold),
+					TextSize = 13,
+					TextColor3 = Color3.fromRGB(255, 255, 255),
+					BackgroundTransparency = 1,
+					Size = UDim2.fromOffset(20, 22),
+					Position = UDim2.new(1, 0, 0.5, 0),
+					AnchorPoint = Vector2.new(1, 0.5),
+					Name = "Remove",
+				}),
+			})
+			chip:FindFirstChild("Remove").MouseButton1Click:Connect(function() removeTag(tag) end)
+			chips[tag] = chip
+			Library:SafeCallback(TI.Callback, TI.Value)
+			Library:SafeCallback(TI.Changed, TI.Value)
+		end
+
+		local InputBox = New("TextBox", {
+			PlaceholderText = Config.Placeholder,
+			Text = "",
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
+			TextSize = 12,
+			Size = UDim2.fromOffset(120, 22),
+			BackgroundTransparency = 0.92,
+			ClearTextOnFocus = false,
+			Parent = TagsArea,
+			ThemeTag = { BackgroundColor3 = "Element", TextColor3 = "Text", PlaceholderColor3 = "SubText" },
+		}, { New("UICorner", { CornerRadius = UDim.new(1, 0) }), New("UIPadding", { PaddingLeft = UDim.new(0, 8), PaddingRight = UDim.new(0, 8) }) })
+
+		Creator.AddSignal(InputBox.FocusLost, function(enter)
+			if enter then
+				addTag(InputBox.Text)
+				InputBox.Text = ""
+			end
+		end)
+
+		for _, t in ipairs(TI.Value) do addTag(t) end
+
+		function TI:SetValue(tags)
+			for tag in pairs(chips) do removeTag(tag) end
+			for _, t in ipairs(tags) do addTag(t) end
+		end
+		function TI:OnChanged(Func) TI.Changed = Func Func(TI.Value) end
+		function TI:Destroy() TIFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = TI
+		return TI
+	end
+	return Element
+end)()
+
+-- [22] ColorSwatch (shows a row of preset colors to pick)
+ElementsTable.ColorSwatch = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "ColorSwatch"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "ColorSwatch - Missing Title")
+		Config.Colors = Config.Colors or {
+			Color3.fromRGB(255,80,80), Color3.fromRGB(255,150,50),
+			Color3.fromRGB(255,220,50), Color3.fromRGB(80,200,80),
+			Color3.fromRGB(60,160,255), Color3.fromRGB(160,80,255),
+			Color3.fromRGB(255,80,180), Color3.fromRGB(200,200,200),
+		}
+
+		local CS = {
+			Type = "ColorSwatch",
+			Value = Config.Default or Config.Colors[1],
+			Callback = Config.Callback or function() end,
+		}
+
+		local CSFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		CS.SetTitle = CSFrame.SetTitle
+		CS.SetDesc  = CSFrame.SetDesc
+		CS.Visible  = CSFrame.Visible
+		CS.Elements = CSFrame
+
+		local SwatchRow = New("Frame", {
+			Size = UDim2.fromOffset(0, 24),
+			AutomaticSize = Enum.AutomaticSize.X,
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			Parent = CSFrame.Frame,
+		}, {
+			New("UIListLayout", { FillDirection = Enum.FillDirection.Horizontal, Padding = UDim.new(0, 3), VerticalAlignment = Enum.VerticalAlignment.Center }),
+		})
+
+		local selected = nil
+
+		for _, col in ipairs(Config.Colors) do
+			local Swatch = New("TextButton", {
+				Text = "",
+				Size = UDim2.fromOffset(20, 20),
+				BackgroundColor3 = col,
+				Parent = SwatchRow,
+			}, {
+				New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+				New("UIAspectRatioConstraint", { AspectRatio = 1 }),
+				New("UIStroke", { Transparency = 1, Color = Color3.fromRGB(255,255,255), ApplyStrokeMode = Enum.ApplyStrokeMode.Border }),
+			})
+
+			Creator.AddSignal(Swatch.MouseButton1Click, function()
+				if selected then selected.UIStroke.Transparency = 1 end
+				selected = Swatch
+				Swatch.UIStroke.Transparency = 0
+				CS.Value = col
+				Library:SafeCallback(CS.Callback, col)
+				Library:SafeCallback(CS.Changed, col)
+			end)
+		end
+
+		function CS:SetValue(col) CS.Value = col Library:SafeCallback(self.Callback, col) end
+		function CS:OnChanged(Func) CS.Changed = Func Func(CS.Value) end
+		function CS:Destroy() CSFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = CS
+		return CS
+	end
+	return Element
+end)()
+
+-- [23] GradientBar (display a color gradient preview)
+ElementsTable.GradientBar = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "GradientBar"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "GradientBar - Missing Title")
+		Config.Colors = Config.Colors or { Color3.fromRGB(96,205,255), Color3.fromRGB(255,100,200) }
+		Config.Rotation = Config.Rotation or 90
+
+		local GB = { Type = "GradientBar" }
+		local GBFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		GB.SetTitle = GBFrame.SetTitle
+		GB.SetDesc  = GBFrame.SetDesc
+		GB.Visible  = GBFrame.Visible
+		GB.Elements = GBFrame
+
+		local kps = {}
+		for i, col in ipairs(Config.Colors) do
+			table.insert(kps, ColorSequenceKeypoint.new((i-1)/(#Config.Colors-1), col))
+		end
+
+		local Bar = New("Frame", {
+			Size = UDim2.new(1, -20, 0, 10),
+			Position = UDim2.new(0, 10, 1, -16),
+			AnchorPoint = Vector2.new(0, 1),
+			Parent = GBFrame.Frame,
+			BackgroundColor3 = Color3.fromRGB(255,255,255),
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+			New("UIGradient", {
+				Color = ColorSequence.new(kps),
+				Rotation = Config.Rotation,
+			}),
+		})
+
+		function GB:Destroy() GBFrame.Frame:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = GB
+		return GB
+	end
+	return Element
+end)()
+
+-- [24] InfoCard (card with icon + 2 lines)
+ElementsTable.InfoCard = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "InfoCard"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "InfoCard - Missing Title")
+
+		local IC = { Type = "InfoCard" }
+		local ICFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		IC.SetTitle = ICFrame.SetTitle
+		IC.SetDesc  = ICFrame.SetDesc
+		IC.Visible  = ICFrame.Visible
+		IC.Elements = ICFrame
+
+		if Config.Value then
+			local BigVal = New("TextLabel", {
+				Text = tostring(Config.Value),
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold),
+				TextSize = 22,
+				Position = UDim2.new(1, -12, 0.5, 0),
+				AnchorPoint = Vector2.new(1, 0.5),
+				BackgroundTransparency = 1,
+				Size = UDim2.fromOffset(0, 26),
+				AutomaticSize = Enum.AutomaticSize.X,
+				Parent = ICFrame.Frame,
+				ThemeTag = { TextColor3 = "Accent" },
+			})
+			IC.ValueLabel = BigVal
+		end
+
+		function IC:SetValue(v)
+			if self.ValueLabel then self.ValueLabel.Text = tostring(v) end
+		end
+		function IC:Destroy() ICFrame.Frame:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = IC
+		return IC
+	end
+	return Element
+end)()
+
+-- [25] ButtonGroup (multiple buttons in one row)
+ElementsTable.ButtonGroup = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "ButtonGroup"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "ButtonGroup - Missing Title")
+		assert(Config.Buttons, "ButtonGroup - Missing Buttons")
+
+		local BG = { Type = "ButtonGroup" }
+		local BGFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		BG.SetTitle = BGFrame.SetTitle
+		BG.SetDesc  = BGFrame.SetDesc
+		BG.Visible  = BGFrame.Visible
+		BG.Elements = BGFrame
+
+		local BtnRow = New("Frame", {
+			Size = UDim2.fromOffset(0, 28),
+			AutomaticSize = Enum.AutomaticSize.X,
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			Parent = BGFrame.Frame,
+		}, {
+			New("UIListLayout", {
+				FillDirection = Enum.FillDirection.Horizontal,
+				Padding = UDim.new(0, 0),
+				VerticalAlignment = Enum.VerticalAlignment.Center,
+			}),
+		})
+
+		for i, btn in ipairs(Config.Buttons) do
+			local isFirst = i == 1
+			local isLast  = i == #Config.Buttons
+
+			local B = New("TextButton", {
+				Text = btn.Text or "Button",
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+				TextSize = 12,
+				Size = UDim2.fromOffset(0, 28),
+				AutomaticSize = Enum.AutomaticSize.X,
+				BackgroundTransparency = 0.85,
+				Parent = BtnRow,
+				ThemeTag = { BackgroundColor3 = "Element", TextColor3 = "Text" },
+			}, {
+				New("UIStroke", { Transparency = 0.5, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "InElementBorder" } }),
+				New("UIPadding", { PaddingLeft = UDim.new(0, 10), PaddingRight = UDim.new(0, 10) }),
+			})
+
+			local Motor, SetT = Creator.SpringMotor(0.85, B, "BackgroundTransparency")
+			Creator.AddSignal(B.MouseEnter, function() SetT(0.72) end)
+			Creator.AddSignal(B.MouseLeave, function() SetT(0.85) end)
+			Creator.AddSignal(B.MouseButton1Down, function() SetT(0.95) end)
+			Creator.AddSignal(B.MouseButton1Up, function() SetT(0.72) end)
+			Creator.AddSignal(B.MouseButton1Click, function()
+				Library:SafeCallback(btn.Callback)
+			end)
+		end
+
+		function BG:Destroy() BGFrame.Frame:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = BG
+		return BG
+	end
+	return Element
+end)()
+
+-- [26] AnimatedLabel (text that types out / changes with animation)
+ElementsTable.AnimatedLabel = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "AnimatedLabel"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "AnimatedLabel - Missing Title")
+		Config.Value = Config.Value or ""
+		Config.Typewriter = Config.Typewriter or false
+
+		local AL = { Type = "AnimatedLabel", Value = Config.Value }
+		local ALFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		AL.SetTitle = ALFrame.SetTitle
+		AL.SetDesc  = ALFrame.SetDesc
+		AL.Visible  = ALFrame.Visible
+		AL.Elements = ALFrame
+
+		local ValLabel = New("TextLabel", {
+			Text = Config.Typewriter and "" or Config.Value,
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+			TextSize = 13,
+			Position = UDim2.new(1, -10, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			Size = UDim2.fromOffset(0, 16),
+			AutomaticSize = Enum.AutomaticSize.X,
+			TextXAlignment = Enum.TextXAlignment.Right,
+			Parent = ALFrame.Frame,
+			ThemeTag = { TextColor3 = "Accent" },
+		})
+
+		if Config.Typewriter then
+			task.spawn(function()
+				for i = 1, #Config.Value do
+					ValLabel.Text = Config.Value:sub(1, i)
+					task.wait(0.04)
+				end
+			end)
+		end
+
+		function AL:SetValue(v, typewriter)
+			self.Value = v
+			if typewriter then
+				ValLabel.Text = ""
+				task.spawn(function()
+					for i = 1, #v do
+						ValLabel.Text = v:sub(1, i)
+						task.wait(0.03)
+					end
+				end)
+			else
+				TweenService:Create(ValLabel, TweenInfo.new(0.2), { TextTransparency = 1 }):Play()
+				task.delay(0.2, function()
+					if ValLabel and ValLabel.Parent then
+						ValLabel.Text = v
+						TweenService:Create(ValLabel, TweenInfo.new(0.2), { TextTransparency = 0 }):Play()
+					end
+				end)
+			end
+		end
+		function AL:Destroy() ALFrame.Frame:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = AL
+		return AL
+	end
+	return Element
+end)()
+
+-- [27] Divider (simple visible line divider with optional label, different from Separator)
+ElementsTable.Divider = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Divider"
+
+	function Element:New(Idx, Config)
+		Config = Config or {}
+		local DV = { Type = "Divider" }
+
+		local Root = New("Frame", {
+			Size = UDim2.new(1, 0, 0, Config.Height or 1),
+			BackgroundTransparency = 0.4,
+			Parent = self.Container,
+			LayoutOrder = 7,
+			ThemeTag = { BackgroundColor3 = "TitleBarLine" },
+		})
+
+		if Config.Glow then
+			New("UIGradient", {
+				Transparency = NumberSequence.new({
+					NumberSequenceKeypoint.new(0, 1),
+					NumberSequenceKeypoint.new(0.3, 0),
+					NumberSequenceKeypoint.new(0.7, 0),
+					NumberSequenceKeypoint.new(1, 1),
+				}),
+				Parent = Root,
+			})
+		end
+
+		function DV:Destroy() Root:Destroy() Library.Options[Idx] = nil end
+		Library.Options[Idx] = DV
+		return DV
+	end
+	return Element
+end)()
+
+-- [28] FavoriteButton (bookmark/star toggle)
+ElementsTable.FavoriteButton = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "FavoriteButton"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "FavoriteButton - Missing Title")
+
+		local FB = {
+			Type = "FavoriteButton",
+			Value = Config.Default or false,
+			Callback = Config.Callback or function() end,
+		}
+
+		local FBFrame = Components.Element(Config.Title, Config.Description, self.Container, true, Config)
+		FB.SetTitle = FBFrame.SetTitle
+		FB.SetDesc  = FBFrame.SetDesc
+		FB.Visible  = FBFrame.Visible
+		FB.Elements = FBFrame
+
+		local StarBtn = New("ImageButton", {
+			Image = "rbxassetid://10734966248",
+			Size = UDim2.fromOffset(22, 22),
+			Position = UDim2.new(1, -12, 0.5, 0),
+			AnchorPoint = Vector2.new(1, 0.5),
+			BackgroundTransparency = 1,
+			ImageColor3 = Creator.GetThemeProperty("SubText"),
+			Parent = FBFrame.Frame,
+		})
+
+		local function updateStar(val)
+			TweenService:Create(StarBtn, TweenInfo.new(0.2), {
+				ImageColor3 = val and Creator.GetThemeProperty("Accent") or Creator.GetThemeProperty("SubText"),
+				Size = val and UDim2.fromOffset(24, 24) or UDim2.fromOffset(22, 22),
+			}):Play()
+		end
+
+		Creator.AddSignal(FBFrame.Frame.MouseButton1Click, function()
+			FB.Value = not FB.Value
+			updateStar(FB.Value)
+			Library:SafeCallback(FB.Callback, FB.Value)
+			Library:SafeCallback(FB.Changed, FB.Value)
+		end)
+
+		function FB:SetValue(val)
+			self.Value = val
+			updateStar(val)
+			Library:SafeCallback(self.Callback, val)
+			Library:SafeCallback(self.Changed, val)
+		end
+		function FB:OnChanged(Func) FB.Changed = Func Func(FB.Value) end
+		function FB:Destroy() FBFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		updateStar(Config.Default or false)
+		Library.Options[Idx] = FB
+		return FB
+	end
+	return Element
+end)()
+
+-- [29] TextCounter (shows a character/word count as user types)
+ElementsTable.TextCounter = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "TextCounter"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "TextCounter - Missing Title")
+		Config.MaxLength = Config.MaxLength or 100
+		Config.Mode = Config.Mode or "chars" -- "chars" or "words"
+
+		local TC = {
+			Type = "TextCounter",
+			Value = Config.Default or "",
+			Callback = Config.Callback or function() end,
+		}
+
+		local TCFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		TC.SetTitle = TCFrame.SetTitle
+		TC.SetDesc  = TCFrame.SetDesc
+		TC.Visible  = TCFrame.Visible
+		TC.Elements = TCFrame
+
+		local CountLabel = New("TextLabel", {
+			Text = "0/" .. Config.MaxLength,
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
+			TextSize = 11,
+			Position = UDim2.new(1, -10, 0, 10),
+			AnchorPoint = Vector2.new(1, 0),
+			BackgroundTransparency = 1,
+			Size = UDim2.fromOffset(60, 13),
+			TextXAlignment = Enum.TextXAlignment.Right,
+			Parent = TCFrame.Frame,
+			ThemeTag = { TextColor3 = "SubText" },
+		})
+
+		local TextArea = New("TextBox", {
+			Text = Config.Default or "",
+			PlaceholderText = Config.Placeholder or "Type here...",
+			FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json"),
+			TextSize = 12,
+			TextXAlignment = Enum.TextXAlignment.Left,
+			TextYAlignment = Enum.TextYAlignment.Top,
+			MultiLine = true,
+			TextWrapped = true,
+			ClearTextOnFocus = false,
+			BackgroundTransparency = 0.92,
+			Size = UDim2.new(1, -20, 0, 60),
+			Position = UDim2.fromOffset(10, 0),
+			Parent = TCFrame.LabelHolder,
+			LayoutOrder = 3,
+			ThemeTag = { BackgroundColor3 = "Element", TextColor3 = "Text", PlaceholderColor3 = "SubText" },
+		}, {
+			New("UICorner", { CornerRadius = UDim.new(0, 5) }),
+			New("UIStroke", { Transparency = 0.6, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "InElementBorder" } }),
+			New("UIPadding", { PaddingLeft = UDim.new(0, 8), PaddingRight = UDim.new(0, 8), PaddingTop = UDim.new(0, 6) }),
+		})
+
+		local function getCount(txt)
+			if Config.Mode == "words" then
+				local words = 0
+				for _ in txt:gmatch("%S+") do words = words + 1 end
+				return words
+			else
+				return #txt
+			end
+		end
+
+		Creator.AddSignal(TextArea:GetPropertyChangedSignal("Text"), function()
+			local txt = TextArea.Text
+			if #txt > Config.MaxLength and Config.Mode == "chars" then
+				txt = txt:sub(1, Config.MaxLength)
+				TextArea.Text = txt
+			end
+			local count = getCount(txt)
+			CountLabel.Text = count .. "/" .. Config.MaxLength
+			CountLabel.TextColor3 = count >= Config.MaxLength and Color3.fromRGB(255, 80, 80) or Creator.GetThemeProperty("SubText")
+			TC.Value = txt
+			Library:SafeCallback(TC.Callback, txt)
+			Library:SafeCallback(TC.Changed, txt)
+		end)
+
+		function TC:SetValue(v)
+			self.Value = v
+			TextArea.Text = v
+		end
+		function TC:OnChanged(Func) TC.Changed = Func Func(TC.Value) end
+		function TC:Destroy() TCFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = TC
+		return TC
+	end
+	return Element
+end)()
+
+-- [30] Chip (tag display / filter chip row, read-only or togglable)
+ElementsTable.Chip = (function()
+	local Element = {}
+	Element.__index = Element
+	Element.__type = "Chip"
+
+	function Element:New(Idx, Config)
+		assert(Config.Title, "Chip - Missing Title")
+		Config.Items = Config.Items or {}
+		Config.Multi = Config.Multi ~= false
+
+		local CH = {
+			Type = "Chip",
+			Value = Config.Default and table.clone(Config.Default) or {},
+			Callback = Config.Callback or function() end,
+		}
+
+		local CHFrame = Components.Element(Config.Title, Config.Description, self.Container, false, Config)
+		CH.SetTitle = CHFrame.SetTitle
+		CH.SetDesc  = CHFrame.SetDesc
+		CH.Visible  = CHFrame.Visible
+		CH.Elements = CHFrame
+
+		local ChipRow = New("Frame", {
+			Size = UDim2.new(1, -20, 0, 0),
+			AutomaticSize = Enum.AutomaticSize.Y,
+			Position = UDim2.fromOffset(10, 0),
+			BackgroundTransparency = 1,
+			Parent = CHFrame.LabelHolder,
+			LayoutOrder = 3,
+		}, {
+			New("UIListLayout", {
+				FillDirection = Enum.FillDirection.Horizontal,
+				Padding = UDim.new(0, 5),
+				Wraps = true,
+			}),
+			New("UIPadding", { PaddingTop = UDim.new(0, 4), PaddingBottom = UDim.new(0, 6) }),
+		})
+
+		local ChipBtns = {}
+
+		local function updateChip(item, btn)
+			local active = table.find(CH.Value, item) ~= nil
+			TweenService:Create(btn, TweenInfo.new(0.18), {
+				BackgroundTransparency = active and 0.5 or 0.88,
+			}):Play()
+		end
+
+		for _, item in ipairs(Config.Items) do
+			local chip = New("TextButton", {
+				Text = tostring(item),
+				FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Medium),
+				TextSize = 12,
+				Size = UDim2.fromOffset(0, 24),
+				AutomaticSize = Enum.AutomaticSize.X,
+				BackgroundTransparency = 0.88,
+				Parent = ChipRow,
+				ThemeTag = { BackgroundColor3 = "Accent", TextColor3 = "Text" },
+			}, {
+				New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+				New("UIStroke", { Transparency = 0.5, ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = { Color = "Accent" } }),
+				New("UIPadding", { PaddingLeft = UDim.new(0, 10), PaddingRight = UDim.new(0, 10) }),
+			})
+
+			ChipBtns[item] = chip
+			updateChip(item, chip)
+
+			Creator.AddSignal(chip.MouseButton1Click, function()
+				local idx = table.find(CH.Value, item)
+				if idx then
+					table.remove(CH.Value, idx)
+				else
+					if not Config.Multi then CH.Value = {} end
+					table.insert(CH.Value, item)
+				end
+				for it, btn in pairs(ChipBtns) do
+					updateChip(it, btn)
+				end
+				Library:SafeCallback(CH.Callback, CH.Value)
+				Library:SafeCallback(CH.Changed, CH.Value)
+			end)
+		end
+
+		function CH:SetValue(v)
+			self.Value = v
+			for it, btn in pairs(ChipBtns) do updateChip(it, btn) end
+			Library:SafeCallback(self.Callback, v)
+			Library:SafeCallback(self.Changed, v)
+		end
+		function CH:OnChanged(Func) CH.Changed = Func Func(CH.Value) end
+		function CH:Destroy() CHFrame.Frame:Destroy() Library.Options[Idx] = nil end
+
+		Library.Options[Idx] = CH
+		return CH
+	end
+	return Element
+end)()
+
+-- ============================================================
+-- END OF 30 NEW ELEMENTS
+-- ============================================================
+
 local NotificationModule = Components.Notification
 NotificationModule:Init(GUI)
 
@@ -8711,6 +11375,126 @@ local SaveManager = {} do
 
 		},
 
+
+		-- ✨ New Element Parsers ✨
+
+		ProgressBar = {
+			Save = function(idx, object)
+				return { type = "ProgressBar", idx = idx, value = object.Value }
+			end,
+			Load = function(idx, data)
+				if SaveManager.Options[idx] then
+					SaveManager.Options[idx]:SetValue(data.value)
+				end
+			end,
+		},
+
+		Checkbox = {
+			Save = function(idx, object)
+				return { type = "Checkbox", idx = idx, value = object.Value }
+			end,
+			Load = function(idx, data)
+				if SaveManager.Options[idx] then
+					SaveManager.Options[idx]:SetValue(data.value)
+				end
+			end,
+		},
+
+		RadioGroup = {
+			Save = function(idx, object)
+				return { type = "RadioGroup", idx = idx, value = object.Value }
+			end,
+			Load = function(idx, data)
+				if SaveManager.Options[idx] then
+					SaveManager.Options[idx]:SetValue(data.value)
+				end
+			end,
+		},
+
+		NumberInput = {
+			Save = function(idx, object)
+				return { type = "NumberInput", idx = idx, value = object.Value }
+			end,
+			Load = function(idx, data)
+				if SaveManager.Options[idx] then
+					SaveManager.Options[idx]:SetValue(data.value)
+				end
+			end,
+		},
+
+		Rating = {
+			Save = function(idx, object)
+				return { type = "Rating", idx = idx, value = object.Value }
+			end,
+			Load = function(idx, data)
+				if SaveManager.Options[idx] then
+					SaveManager.Options[idx]:SetValue(data.value)
+				end
+			end,
+		},
+
+		MultiSlider = {
+			Save = function(idx, object)
+				return { type = "MultiSlider", idx = idx, v1 = object.Value[1], v2 = object.Value[2] }
+			end,
+			Load = function(idx, data)
+				if SaveManager.Options[idx] then
+					SaveManager.Options[idx]:SetValue({ data.v1, data.v2 })
+				end
+			end,
+		},
+
+		TagInput = {
+			Save = function(idx, object)
+				return { type = "TagInput", idx = idx, value = table.concat(object.Value, ",") }
+			end,
+			Load = function(idx, data)
+				if SaveManager.Options[idx] then
+					local tags = {}
+					for t in (data.value or ""):gmatch("[^,]+") do
+						table.insert(tags, t)
+					end
+					SaveManager.Options[idx]:SetValue(tags)
+				end
+			end,
+		},
+
+		TextCounter = {
+			Save = function(idx, object)
+				return { type = "TextCounter", idx = idx, text = object.Value }
+			end,
+			Load = function(idx, data)
+				if SaveManager.Options[idx] then
+					SaveManager.Options[idx]:SetValue(data.text)
+				end
+			end,
+		},
+
+		Chip = {
+			Save = function(idx, object)
+				return { type = "Chip", idx = idx, value = table.concat(object.Value, ",") }
+			end,
+			Load = function(idx, data)
+				if SaveManager.Options[idx] then
+					local vals = {}
+					for v in (data.value or ""):gmatch("[^,]+") do
+						table.insert(vals, v)
+					end
+					SaveManager.Options[idx]:SetValue(vals)
+				end
+			end,
+		},
+
+		FavoriteButton = {
+			Save = function(idx, object)
+				return { type = "FavoriteButton", idx = idx, value = object.Value }
+			end,
+			Load = function(idx, data)
+				if SaveManager.Options[idx] then
+					SaveManager.Options[idx]:SetValue(data.value)
+				end
+			end,
+		},
 
 	}
 
@@ -9827,50 +12611,6 @@ local InterfaceManager = {} do
 
 		Library.MinimizeKeybind = MenuKeybind
 
-		-- Bata Tools Section
-		local bataSection = tab:AddSection("Bata Tools", "wrench")
-
-		bataSection:AddButton({
-			Title = "Copy Theme Name",
-			Description = "Copy current theme name to clipboard",
-			Callback = function()
-				Library:CopyToClipboard(Library.Theme or "Dark")
-			end,
-		})
-
-		bataSection:AddButton({
-			Title = "Export All Values",
-			Description = "Print all current option values to console",
-			Callback = function()
-				local vals = Library:GetValues()
-				local out = {}
-				for k, v in pairs(vals) do
-					local vStr = type(v) == "table" and "[table]" or tostring(v)
-					table.insert(out, k .. " = " .. vStr)
-				end
-				table.sort(out)
-				local result = table.concat(out, "\n")
-				print("[Bata] Option Values:\n" .. result)
-				Library:Notify({
-					Title = "Bata Tools",
-					Content = "Exported " .. #out .. " values to console",
-					Duration = 3,
-				})
-			end,
-		})
-
-		bataSection:AddButton({
-			Title = "Reset All to Default",
-			Description = "Reset all options to their initial values",
-			Callback = function()
-				Library:ResetAll(true)
-			end,
-		})
-
-		bataSection:AddParagraph({
-			Title = "Version",
-			Content = "Bata Library v" .. (Library.Version or "1.3.0-BATA"),
-		})
 
 	end
 
@@ -10601,21 +13341,30 @@ end
 
 function Library:Destroy()
 
+
 	if Library.Window then
+
 
 		Library.Unloaded = true
 
+
 		if Library.UseAcrylic then
+
 
 			Library.Window.AcrylicPaint.Model:Destroy()
 
+
 		end
+
 
 		Creator.Disconnect()
 
+
 		Library.GUI:Destroy()
 
+
 	end
+
 
 end
 
@@ -10790,476 +13539,6 @@ function Library:Notify(Config)
 
 end
 
--- ============================================================
--- BATA EXTENDED FEATURES v1.3.0
--- 20 ลูกเล่นใหม่ที่มีประโยชน์ต่อการทำสคริปต์
--- ============================================================
-
--- [1] Timer / Stopwatch: นับเวลาได้จาก Script
-Library._Timers = {}
-function Library:CreateTimer(id)
-	local timer = {
-		_id = id or tostring(os.time()),
-		_start = nil,
-		_elapsed = 0,
-		_running = false,
-		_label = nil,
-	}
-
-	function timer:Start()
-		if not self._running then
-			self._start = os.clock()
-			self._running = true
-		end
-		return self
-	end
-
-	function timer:Stop()
-		if self._running then
-			self._elapsed = self._elapsed + (os.clock() - self._start)
-			self._running = false
-		end
-		return self
-	end
-
-	function timer:Reset()
-		self._elapsed = 0
-		self._start = self._running and os.clock() or nil
-		return self
-	end
-
-	function timer:GetElapsed()
-		if self._running then
-			return self._elapsed + (os.clock() - self._start)
-		end
-		return self._elapsed
-	end
-
-	function timer:GetFormatted()
-		local t = self:GetElapsed()
-		local h = math.floor(t / 3600)
-		local m = math.floor((t % 3600) / 60)
-		local s = math.floor(t % 60)
-		local ms = math.floor((t % 1) * 1000)
-		if h > 0 then
-			return string.format("%02d:%02d:%02d", h, m, s)
-		else
-			return string.format("%02d:%02d.%03d", m, s, ms)
-		end
-	end
-
-	-- ผูกกับ Label ใน UI ให้อัปเดตอัตโนมัติ
-	function timer:BindToLabel(element, prefix, suffix)
-		prefix = prefix or ""
-		suffix = suffix or ""
-		self._label = element
-		self._labelPrefix = prefix
-		self._labelSuffix = suffix
-		if element and element.SetTitle then
-			local conn = RunService.Heartbeat:Connect(function()
-				if not self._label then conn:Disconnect() return end
-				pcall(function()
-					self._label:SetTitle(self._labelPrefix .. self:GetFormatted() .. self._labelSuffix)
-				end)
-			end)
-			table.insert(Creator.Signals, conn)
-		end
-		return self
-	end
-
-	Library._Timers[timer._id] = timer
-	return timer
-end
-
--- [2] GetTimer: ดึง Timer ที่มีอยู่แล้ว
-function Library:GetTimer(id)
-	return Library._Timers[id]
-end
-
--- [3] RateLimit / Cooldown: ป้องกัน callback ถูกเรียกถี่เกินไป
-function Library:Throttle(cooldown, callback)
-	local lastCall = 0
-	return function(...)
-		local now = os.clock()
-		if now - lastCall >= cooldown then
-			lastCall = now
-			return callback(...)
-		end
-	end
-end
-
--- [4] Debounce: รอให้หยุดกดแล้วค่อย trigger
-function Library:Debounce(delay, callback)
-	local timer = nil
-	return function(...)
-		local args = {...}
-		if timer then task.cancel(timer) end
-		timer = task.delay(delay, function()
-			timer = nil
-			callback(table.unpack(args))
-		end)
-	end
-end
-
--- [5] Once: ให้ callback ทำงานแค่ครั้งเดียว
-function Library:Once(callback)
-	local called = false
-	return function(...)
-		if not called then
-			called = true
-			return callback(...)
-		end
-	end
-end
-
--- [6] State Machine: จัดการ state ของสคริปต์ง่ายขึ้น
-function Library:CreateStateMachine(states, initial)
-	local sm = {
-		_states = states or {},
-		_current = initial,
-		_listeners = {},
-	}
-
-	function sm:Get()
-		return self._current
-	end
-
-	function sm:Is(state)
-		return self._current == state
-	end
-
-	function sm:Transition(newState)
-		local old = self._current
-		if self._states[newState] then
-			self._current = newState
-			for _, fn in ipairs(self._listeners) do
-				pcall(fn, newState, old)
-			end
-			return true
-		end
-		return false
-	end
-
-	function sm:OnChange(fn)
-		table.insert(self._listeners, fn)
-	end
-
-	function sm:AddState(name, data)
-		self._states[name] = data or true
-	end
-
-	return sm
-end
-
--- [7] Flag System: Toggle on/off flags สำหรับ feature switches
-Library._Flags = {}
-function Library:SetFlag(name, value)
-	Library._Flags[name] = value
-end
-function Library:GetFlag(name, default)
-	local v = Library._Flags[name]
-	if v == nil then return default end
-	return v
-end
-function Library:ToggleFlag(name)
-	Library._Flags[name] = not Library._Flags[name]
-	return Library._Flags[name]
-end
-
--- [8] Event Bus: pub/sub ระหว่าง modules ต่างๆ
-Library._EventBus = {}
-function Library:Subscribe(event, callback)
-	if not Library._EventBus[event] then
-		Library._EventBus[event] = {}
-	end
-	local id = #Library._EventBus[event] + 1
-	Library._EventBus[event][id] = callback
-	return function() -- unsubscribe
-		Library._EventBus[event][id] = nil
-	end
-end
-function Library:Publish(event, ...)
-	if Library._EventBus[event] then
-		for _, cb in pairs(Library._EventBus[event]) do
-			task.spawn(cb, ...)
-		end
-	end
-end
-function Library:Emit(event, ...) -- alias
-	return Library:Publish(event, ...)
-end
-
--- [9] Persistent Value: เก็บ/โหลดค่าแบบง่ายโดยไม่ต้องใช้ SaveManager เต็มรูปแบบ
-function Library:PersistGet(key, default)
-	if not RunService:IsStudio() then
-		pcall(function()
-			local folder = "BataData"
-			if not isfolder(folder) then makefolder(folder) end
-			local path = folder .. "/" .. key .. ".txt"
-			if isfile(path) then
-				local raw = readfile(path)
-				local ok, val = pcall(game:GetService("HttpService").JSONDecode, game:GetService("HttpService"), raw)
-				if ok then return val end
-			end
-		end)
-	end
-	return default
-end
-
-function Library:PersistSet(key, value)
-	if not RunService:IsStudio() then
-		pcall(function()
-			local folder = "BataData"
-			if not isfolder(folder) then makefolder(folder) end
-			local path = folder .. "/" .. key .. ".txt"
-			local encoded = game:GetService("HttpService"):JSONEncode(value)
-			writefile(path, encoded)
-		end)
-	end
-end
-
--- [10] Color Utilities: ช่วยจัดการสี เช่น lerp, lighten, darken
-Library.ColorUtil = {}
-function Library.ColorUtil.Lerp(c1, c2, t)
-	return Color3.new(
-		c1.R + (c2.R - c1.R) * t,
-		c1.G + (c2.G - c1.G) * t,
-		c1.B + (c2.B - c1.B) * t
-	)
-end
-function Library.ColorUtil.Lighten(c, amount)
-	amount = amount or 0.2
-	return Library.ColorUtil.Lerp(c, Color3.new(1,1,1), amount)
-end
-function Library.ColorUtil.Darken(c, amount)
-	amount = amount or 0.2
-	return Library.ColorUtil.Lerp(c, Color3.new(0,0,0), amount)
-end
-function Library.ColorUtil.ToHex(c)
-	return string.format("#%02X%02X%02X", math.floor(c.R*255), math.floor(c.G*255), math.floor(c.B*255))
-end
-function Library.ColorUtil.FromHex(hex)
-	hex = hex:gsub("#","")
-	return Color3.fromRGB(
-		tonumber("0x"..hex:sub(1,2)),
-		tonumber("0x"..hex:sub(3,4)),
-		tonumber("0x"..hex:sub(5,6))
-	)
-end
-
--- [11] Batch Operations: เรียก SetValue หลายตัวพร้อมกัน
-function Library:BatchSet(optionTable)
-	-- optionTable = { OptionName = value, ... }
-	for name, value in pairs(optionTable) do
-		if Library.Options[name] and Library.Options[name].SetValue then
-			pcall(function()
-				Library.Options[name]:SetValue(value)
-			end)
-		end
-	end
-end
-
--- [12] GetValues: ดึงค่าทุก option เป็น table เดียว
-function Library:GetValues()
-	local out = {}
-	for name, opt in pairs(Library.Options) do
-		if opt.Value ~= nil then
-			out[name] = opt.Value
-		end
-	end
-	return out
-end
-
--- [13] Conditional Visibility: ซ่อน/แสดง Elements ตาม condition อัตโนมัติ
-function Library:BindVisibility(element, watchOption, predicate)
-	-- element = option ที่ต้องการซ่อน/แสดง
-	-- watchOption = ชื่อ option ที่ต้องจับตา
-	-- predicate = function(value) -> bool
-	predicate = predicate or function(v) return v end
-
-	local function update()
-		if Library.Options[watchOption] then
-			local v = Library.Options[watchOption].Value
-			local show = predicate(v)
-			if element and element.Visible then
-				element:Visible(show)
-			end
-		end
-	end
-
-	if Library.Options[watchOption] then
-		local origCb = Library.Options[watchOption].Callback
-		Library.Options[watchOption].Callback = function(v)
-			if origCb then pcall(origCb, v) end
-			update()
-		end
-	end
-
-	task.defer(update)
-end
-
--- [14] ResetAll: รีเซ็ต option ทุกอันกลับค่า default
-Library._Defaults = {}
-function Library:SaveDefaults()
-	for name, opt in pairs(Library.Options) do
-		if opt.Value ~= nil then
-			Library._Defaults[name] = opt.Value
-		end
-	end
-end
-function Library:ResetAll(notif)
-	for name, defaultVal in pairs(Library._Defaults) do
-		if Library.Options[name] and Library.Options[name].SetValue then
-			pcall(function()
-				Library.Options[name]:SetValue(defaultVal)
-			end)
-		end
-	end
-	if notif ~= false then
-		Library:Notify({
-			Title = "Reset",
-			Content = "All options have been reset to defaults.",
-			Duration = 3,
-		})
-	end
-end
-
--- [15] Search Options: ค้นหา option จากชื่อ (แบบ fuzzy)
-function Library:FindOption(query)
-	query = query:lower()
-	local results = {}
-	for name, opt in pairs(Library.Options) do
-		if name:lower():find(query, 1, true) then
-			table.insert(results, { name = name, option = opt })
-		end
-	end
-	return results
-end
-
--- [16] HotReload Callback: เปลี่ยน callback ของ option ได้ตอน runtime
-function Library:SetCallback(optionName, newCallback)
-	if Library.Options[optionName] then
-		Library.Options[optionName].Callback = newCallback
-		return true
-	end
-	return false
-end
-
--- [17] Scheduled Task: รัน function ซ้ำทุก N วินาที ยกเลิกได้
-function Library:Every(interval, callback)
-	local running = true
-	local handle = task.spawn(function()
-		while running and not Library.Unloaded do
-			task.wait(interval)
-			if running and not Library.Unloaded then
-				pcall(callback)
-			end
-		end
-	end)
-	return function() -- cancel
-		running = false
-	end
-end
-
--- [18] Counter: นับจำนวนครั้งที่เหตุการณ์เกิดขึ้น ผูกกับ UI Label ได้
-function Library:CreateCounter(id, start)
-	local counter = {
-		_id = id or "counter_" .. tostring(os.time()),
-		Value = start or 0,
-		_listeners = {},
-	}
-
-	function counter:Increment(amount)
-		self.Value = self.Value + (amount or 1)
-		for _, fn in ipairs(self._listeners) do pcall(fn, self.Value) end
-		return self
-	end
-
-	function counter:Decrement(amount)
-		self.Value = self.Value - (amount or 1)
-		for _, fn in ipairs(self._listeners) do pcall(fn, self.Value) end
-		return self
-	end
-
-	function counter:Reset()
-		self.Value = 0
-		for _, fn in ipairs(self._listeners) do pcall(fn, self.Value) end
-		return self
-	end
-
-	function counter:Set(v)
-		self.Value = v
-		for _, fn in ipairs(self._listeners) do pcall(fn, self.Value) end
-		return self
-	end
-
-	function counter:OnChange(fn)
-		table.insert(self._listeners, fn)
-		return self
-	end
-
-	function counter:BindToLabel(element, formatFn)
-		formatFn = formatFn or function(v) return tostring(v) end
-		self:OnChange(function(v)
-			if element and element.SetTitle then
-				pcall(function() element:SetTitle(formatFn(v)) end)
-			end
-		end)
-		return self
-	end
-
-	return counter
-end
-
--- [19] Clipboard: Copy text ไปยัง clipboard (ถ้า executor support)
-function Library:CopyToClipboard(text)
-	local success = false
-	if setclipboard then
-		pcall(function()
-			setclipboard(tostring(text))
-			success = true
-		end)
-	elseif toclipboard then
-		pcall(function()
-			toclipboard(tostring(text))
-			success = true
-		end)
-	end
-	if success then
-		Library:Notify({
-			Title = "Copied",
-			Content = tostring(text):sub(1, 80),
-			Duration = 2,
-		})
-	end
-	return success
-end
-
--- [20] Profile / Benchmark: วัดเวลา execution ของ function
-function Library:Benchmark(label, fn, iterations)
-	iterations = iterations or 1
-	local t0 = os.clock()
-	for i = 1, iterations do
-		pcall(fn, i)
-	end
-	local elapsed = os.clock() - t0
-	local avg = elapsed / iterations
-	local msg = string.format("[%s] %dx → %.4fms total, %.4fms avg",
-		label or "bench", iterations, elapsed * 1000, avg * 1000)
-	print(msg)
-	Library:Notify({
-		Title = "Benchmark: " .. (label or "bench"),
-		Content = string.format("%.4f ms total / %.4f ms avg", elapsed * 1000, avg * 1000),
-		SubContent = string.format("%d iterations", iterations),
-		Duration = 5,
-	})
-	return elapsed, avg
-end
-
--- ============================================================
--- END BATA EXTENDED FEATURES
--- ============================================================
-
 
 
 
@@ -11284,84 +13563,177 @@ end
 
 local MinimizeButton = New("TextButton", {
 
+
 	BackgroundColor3 = Color3.fromRGB(25, 25, 30),
+
+
 	Size = UDim2.new(1, 0, 1, 0),
+
+
 	BorderSizePixel = 0,
-	BackgroundTransparency = 1,
-	ThemeTag = { BackgroundColor3 = "AcrylicMain" },
+
+
+	BackgroundTransparency = 0.05, 
+
 
 }, {
 
+
 	New("UICorner", {
+
+
 		CornerRadius = UDim.new(0, 14),
+
+
 	}),
 
-	-- Gradient background
-	New("Frame", {
-		Size = UDim2.new(1, 0, 1, 0),
-		BackgroundColor3 = Color3.fromRGB(30, 30, 40),
-		BackgroundTransparency = 0.05,
-		BorderSizePixel = 0,
-		ThemeTag = { BackgroundColor3 = "Element" },
-	}, {
-		New("UICorner", { CornerRadius = UDim.new(0, 14) }),
-		New("UIGradient", {
-			Color = ColorSequence.new{
-				ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
-				ColorSequenceKeypoint.new(1, Color3.fromRGB(180, 180, 180)),
-			},
-			Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.85),
-				NumberSequenceKeypoint.new(1, 0.95),
-			},
-			Rotation = 135,
-		}),
+
+	New("UIGradient", {
+
+
+		Color = ColorSequence.new{
+
+
+			ColorSequenceKeypoint.new(0, Color3.fromRGB(40, 40, 50)),
+
+
+			ColorSequenceKeypoint.new(1, Color3.fromRGB(20, 20, 25))
+
+
+		},
+
+
+		Rotation = 45,
+
+
 	}),
 
-	-- Accent border glow
+
 	New("UIStroke", {
+
+
 		ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-		Transparency = 0.45,
-		Thickness = 1.5,
-		ThemeTag = { Color = "Accent" },
+
+
+		Color = Color3.fromRGB(100, 150, 255),
+
+
+		Transparency = 0.6,
+
+
+		Thickness = 2,
+
+
 	}),
 
-	-- Inner highlight shimmer
+
 	New("Frame", {
-		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-		BackgroundTransparency = 0.92,
-		Size = UDim2.new(0.65, 0, 0.22, 0),
-		Position = UDim2.new(0.175, 0, 0.08, 0),
+
+
+		BackgroundColor3 = Color3.fromRGB(100, 150, 255),
+
+
+		BackgroundTransparency = 0.9,
+
+
+		Size = UDim2.new(1, -6, 1, -6),
+
+
+		Position = UDim2.new(0, 3, 0, 3),
+
+
 		BorderSizePixel = 0,
+
+
 	}, {
-		New("UICorner", { CornerRadius = UDim.new(1, 0) }),
-		New("UIGradient", {
-			Color = ColorSequence.new{
-				ColorSequenceKeypoint.new(0, Color3.fromRGB(255,255,255)),
-				ColorSequenceKeypoint.new(1, Color3.fromRGB(200,220,255)),
-			},
-			Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.6),
-				NumberSequenceKeypoint.new(1, 1),
-			},
+
+
+		New("UICorner", {
+
+
+			CornerRadius = UDim.new(0, 11),
+
+
 		}),
+
+
 	}),
 
-	-- Icon
-	New("ImageLabel", {
-		Image = "rbxassetid://10734897102",
-		Size = UDim2.new(0.55, 0, 0.55, 0),
-		Position = UDim2.new(0.5, 0, 0.5, 0),
-		AnchorPoint = Vector2.new(0.5, 0.5),
-		BackgroundTransparency = 1,
-		ImageTransparency = 0.05,
-		ThemeTag = { ImageColor3 = "Text" },
+
+	New("Frame", {
+
+
+		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+
+
+		BackgroundTransparency = 0.94,
+
+
+		Size = UDim2.new(0.7, 0, 0.3, 0),
+
+
+		Position = UDim2.new(0.15, 0, 0.1, 0),
+
+
+		BorderSizePixel = 0,
+
+
 	}, {
+
+
+		New("UICorner", {
+
+
+			CornerRadius = UDim.new(0, 8),
+
+
+		}),
+
+
+	}),
+
+
+	New("ImageLabel", {
+
+
+		Image = "rbxassetid://10734897102",
+
+
+		Size = UDim2.new(0.8, 0, 0.8, 0),
+
+
+		Position = UDim2.new(0.5, 0, 0.5, 0),
+
+
+		AnchorPoint = Vector2.new(0.5, 0.5),
+
+
+		BackgroundTransparency = 1,
+
+
+		ImageColor3 = Color3.fromRGB(255, 255, 255),
+
+
+		ImageTransparency = 0.1,
+
+
+	}, {
+
+
 		New("UIAspectRatioConstraint", {
+
+
 			AspectRatio = 1,
+
+
 			AspectType = Enum.AspectType.FitWithinMaxSize,
+
+
 		})
+
+
 	})
+
 
 })
 
@@ -11371,70 +13743,144 @@ local MinimizeButton = New("TextButton", {
 
 local MobileMinimizeButton = New("TextButton", {
 
+
 	BackgroundColor3 = Color3.fromRGB(25, 25, 30),
+
+
 	Size = UDim2.new(1, 0, 1, 0),
+
+
 	BorderSizePixel = 0,
-	BackgroundTransparency = 1,
-	ThemeTag = { BackgroundColor3 = "AcrylicMain" },
+
+
+	BackgroundTransparency = 0.05,
+
 
 }, {
 
+
 	New("UICorner", {
+
+
 		CornerRadius = UDim.new(0, 12),
+
+
 	}),
 
-	New("Frame", {
-		Size = UDim2.new(1, 0, 1, 0),
-		BackgroundColor3 = Color3.fromRGB(30, 30, 40),
-		BackgroundTransparency = 0.05,
-		BorderSizePixel = 0,
-		ThemeTag = { BackgroundColor3 = "Element" },
-	}, {
-		New("UICorner", { CornerRadius = UDim.new(0, 12) }),
-		New("UIGradient", {
-			Color = ColorSequence.new{
-				ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
-				ColorSequenceKeypoint.new(1, Color3.fromRGB(180, 180, 180)),
-			},
-			Transparency = NumberSequence.new{
-				NumberSequenceKeypoint.new(0, 0.85),
-				NumberSequenceKeypoint.new(1, 0.95),
-			},
-			Rotation = 135,
-		}),
+
+	New("UIGradient", {
+
+
+		Color = ColorSequence.new{
+
+
+			ColorSequenceKeypoint.new(0, Color3.fromRGB(40, 40, 50)),
+
+
+			ColorSequenceKeypoint.new(1, Color3.fromRGB(20, 20, 25))
+
+
+		},
+
+
+		Rotation = 45,
+
+
 	}),
+
 
 	New("UIStroke", {
+
+
 		ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-		Transparency = 0.5,
-		Thickness = 1.2,
-		ThemeTag = { Color = "Accent" },
+
+
+		Color = Color3.fromRGB(100, 150, 255),
+
+
+		Transparency = 0.7,
+
+
+		Thickness = 1.5,
+
+
 	}),
+
 
 	New("Frame", {
-		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-		BackgroundTransparency = 0.93,
-		Size = UDim2.new(0.6, 0, 0.2, 0),
-		Position = UDim2.new(0.2, 0, 0.1, 0),
+
+
+		BackgroundColor3 = Color3.fromRGB(100, 150, 255),
+
+
+		BackgroundTransparency = 0.92,
+
+
+		Size = UDim2.new(1, -4, 1, -4),
+
+
+		Position = UDim2.new(0, 2, 0, 2),
+
+
 		BorderSizePixel = 0,
+
+
 	}, {
-		New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+
+
+		New("UICorner", {
+
+
+			CornerRadius = UDim.new(0, 10),
+
+
+		}),
+
+
 	}),
 
+
 	New("ImageLabel", {
+
+
 		Image = "rbxassetid://10734897102",
-		Size = UDim2.new(0.55, 0, 0.55, 0),
+
+
+		Size = UDim2.new(0.8, 0, 0.8, 0),
+
+
 		Position = UDim2.new(0.5, 0, 0.5, 0),
+
+
 		AnchorPoint = Vector2.new(0.5, 0.5),
+
+
 		BackgroundTransparency = 1,
-		ImageTransparency = 0.05,
-		ThemeTag = { ImageColor3 = "Text" },
+
+
+		ImageColor3 = Color3.fromRGB(255, 255, 255),
+
+
+		ImageTransparency = 0.1,
+
+
 	}, {
+
+
 		New("UIAspectRatioConstraint", {
+
+
 			AspectRatio = 1,
+
+
 			AspectType = Enum.AspectType.FitWithinMaxSize,
+
+
 		})
+
+
 	})
+
 
 })
 
